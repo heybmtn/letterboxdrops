@@ -3,8 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Letterbox Drops</title>
+  <title>Leaflet Distribution in Oxfordshire | Letterbox Drops</title>
+  <meta name="description" content="Local leaflet distribution across Oxfordshire. Trusted, targeted letterbox drops that help local businesses get noticed and generate enquiries.">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Letterbox Drops",
+    "email": "hello@letterboxdrops.co.uk",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Unit 1 Eagle Industrial Estate Church Green",
+      "addressLocality": "Witney",
+      "postalCode": "OX28 4YR",
+      "addressCountry": "GB"
+    },
+    "areaServed": [
+      "Witney",
+      "Oxford",
+      "Abingdon",
+      "Banbury",
+      "Bicester",
+      "Didcot",
+      "Chipping Norton",
+      "Thame",
+      "Henley-on-Thames",
+      "Carterton"
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  }
+  </script>
+
   <style>
     :root {
       --primary: #00b67a;
@@ -12,18 +49,15 @@
       --text: #222222;
       --muted: #666666;
       --light-bg: #f8f9fa;
+      --footer-bg: #f1f3f5;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Ubuntu', sans-serif;
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.65;
       background-color: var(--bg);
       color: var(--text);
     }
@@ -37,11 +71,13 @@
     header h1 {
       font-size: 3rem;
       margin-bottom: 10px;
+      letter-spacing: -0.01em;
     }
 
     header h2 {
       font-size: 1.5rem;
       color: var(--muted);
+      font-weight: 400;
     }
 
     main {
@@ -50,28 +86,58 @@
       padding: 0 20px;
     }
 
-    section {
-      margin-bottom: 40px;
+    section { margin-bottom: 40px; }
+
+    section p { margin: 14px 0; }
+
+    h2 {
+      font-size: 1.6rem;
+      margin: 0 0 10px;
     }
 
     h3 {
-      margin: 30px 0 10px;
-      font-size: 1.3rem;
+      margin: 26px 0 8px;
+      font-size: 1.2rem;
       color: var(--primary);
     }
 
-    .highlight {
-      font-weight: bold;
+    .highlight { font-weight: 700; }
+
+    /* Tighter, cleaner block rhythm without changing overall style */
+    .content-block {
+      background: transparent;
     }
 
+    /* Locations */
+    ul.locations {
+      list-style: none;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 8px 18px;
+      margin-top: 14px;
+    }
+
+    ul.locations li {
+      color: var(--muted);
+    }
+
+    /* CTA email */
     .email {
       text-align: center;
       margin-top: 40px;
     }
 
+    .email .label {
+      display: block;
+      color: var(--muted);
+      margin-bottom: 10px;
+      font-size: 0.98rem;
+    }
+
     .email a {
       font-size: 1.1rem;
-      font-weight: bold;
+      font-weight: 700;
       text-decoration: none;
       color: var(--primary);
       padding: 12px 20px;
@@ -87,76 +153,158 @@
     }
 
     footer {
-      background-color: #f1f3f5;
-      color: #888;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.95rem;
+      background-color: var(--footer-bg);
+      color: #666;
+      padding: 40px 20px;
       margin-top: 60px;
+      font-size: 0.95rem;
+    }
+
+    .footer-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .footer-inner p { margin-bottom: 8px; }
+
+    .footer-inner a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0,0,0,0.15);
+    }
+
+    .footer-inner a:hover {
+      color: var(--text);
+      border-bottom-color: rgba(0,0,0,0.3);
     }
 
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      header h2 {
-        font-size: 1.3rem;
-      }
-
-      .email a {
-        font-size: 1rem;
-        padding: 10px 16px;
-      }
+      header h1 { font-size: 2.2rem; }
+      header h2 { font-size: 1.3rem; }
+      .email a { font-size: 1rem; padding: 10px 16px; }
+      h2 { font-size: 1.45rem; }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Letterbox Drops</h1>
-    <h2>Why Leaflets STILL Work in 2026</h2>
+    <h2>Reliable leaflet distribution for local businesses across Oxfordshire</h2>
   </header>
 
   <main>
-    <section>
+    <!-- ORIGINAL COPY (kept), formatting improved via spacing rules above -->
+    <section class="content-block">
       <p>Leaflets still work in 2026 because they do what digital ads increasingly struggle to do: <span class="highlight">get noticed and trusted locally</span>. A physical leaflet lands in someone’s home, stays on the kitchen table, and reaches people whether they’re online or not — which is critical as ad costs rise and attention online fragments.</p>
       <p>But the real results don’t come from a single drop. <span class="highlight">Multiple drops are essential</span> because people rarely act the first time they see an offer. Repetition builds familiarity, trust, and recall, so when the need finally hits, <em>your business</em> is the one they remember.</p>
       <p>Consistent leaflet distribution turns awareness into action — and that’s why it still delivers real enquiries today.</p>
     </section>
 
-    <section>
+    <section class="content-block">
+      <h2>How It Works</h2>
+
+      <h3>Choose your area</h3>
+      <p>We help you select the right streets and neighbourhoods based on where your customers live.</p>
+
+      <h3>We deliver your leaflets</h3>
+      <p>Your leaflets are delivered door to door, straight through letterboxes.</p>
+
+      <h3>Repeat for results</h3>
+      <p>Multiple drops build recognition and trust, which leads to more enquiries over time.</p>
+    </section>
+
+    <section class="content-block">
       <h2>Why Local Businesses Choose Leaflet Distribution</h2>
-      <h3>Hyper Local Reach</h3>
+
+      <h3>Hyper‑local Reach</h3>
       <p>Straight through your customers letterboxes.</p>
-      <h3>Affordable Marketing</h3>
+
+      <h3>Affordable marketing</h3>
       <p>Big impact without the big spend.</p>
-      <h3>Get Noticed</h3>
-      <p>Physical leaflets stand out from digtial clutter.</p>
-      <h3>Targeted Delivery</h3>
+
+      <h3>Get noticed</h3>
+      <p>Physical leaflets stand out from digital clutter.</p>
+
+      <h3>Targeted delivery</h3>
       <p>Choose exact areas and demographics.</p>
-      <h3>Trackable Results</h3>
+
+      <h3>Trackable results</h3>
       <p>Know exactly where your leaflets land.</p>
-      <h3>Trusted & Tangable</h3>
+
+      <h3>Trusted and tangible</h3>
       <p>Real materials = real results</p>
     </section>
 
-    <section>
+    <!-- NEW: Locations we cover (main towns in Oxfordshire) -->
+    <section class="content-block">
+      <h2>Locations We Cover</h2>
+      <p>We deliver leaflets across Oxfordshire, focusing on real households and consistent local coverage.</p>
+      <ul class="locations">
+        <li>Witney</li>
+        <li>Oxford</li>
+        <li>Abingdon</li>
+        <li>Banbury</li>
+        <li>Bicester</li>
+        <li>Didcot</li>
+        <li>Chipping Norton</li>
+        <li>Thame</li>
+        <li>Henley-on-Thames</li>
+        <li>Carterton</li>
+      </ul>
+    </section>
+
+    <section class="content-block">
       <h2>Ready to Get Your Leaflets Working?</h2>
       <p>If you want reliable local visibility and consistent enquiries, leaflet distribution still works — when it’s done properly and repeated.</p>
       <p><strong>Get in touch to book your next drop.</strong></p>
     </section>
 
     <div class="email">
-      📧 <a href="mailto:bookings@letterboxdrops.uk">bookings@letterboxdrops.uk</a>
+      <span class="label">Get a quote or ask a question</span>
+      <a href="mailto:hello@letterboxdrops.co.uk">hello@letterboxdrops.co.uk</a>
     </div>
+
+    <section class="content-block">
+      <h2>Get a Quote</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST" style="max-width:520px;margin:0 auto;">
+        <p>
+          <label>Name<br>
+          <input type="text" name="name" required style="width:100%;padding:10px;margin-top:4px;"></label>
+        </p>
+        <p>
+          <label>Email<br>
+          <input type="email" name="email" required style="width:100%;padding:10px;margin-top:4px;"></label>
+        </p>
+        <p>
+          <label>Business type<br>
+          <input type="text" name="business" style="width:100%;padding:10px;margin-top:4px;"></label>
+        </p>
+        <p>
+          <label>Message<br>
+          <textarea name="message" rows="4" style="width:100%;padding:10px;margin-top:4px;"></textarea></label>
+        </p>
+        <p style="text-align:center;">
+          <button type="submit" style="background:#00b67a;color:#fff;border:0;padding:12px 20px;font-size:1rem;border-radius:6px;cursor:pointer;">Request a quote</button>
+        </p>
+      </form>
+    </section>
   </main>
 
+  <!-- NEW: Footer with business details (matches style) -->
   <footer>
-    &copy; <span id="year"></span> Letterbox Drops. All rights reserved.
+    <div class="footer-inner">
+      <p><strong>Letterbox Drops</strong></p>
+      <p>Unit 1 Eagle Industrial Estate Church Green<br>Witney, OX28 4YR</p>
+      <p><a href="mailto:hello@letterboxdrops.co.uk">hello@letterboxdrops.co.uk</a></p>
+      <p>&copy; <span id="year"></span> Letterbox Drops. All rights reserved.</p>
+    </div>
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
