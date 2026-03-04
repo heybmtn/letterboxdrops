@@ -73,6 +73,12 @@
     .step p{color:var(--mid);font-size:0.97rem;line-height:1.65;}
     .towns{display:flex;flex-wrap:wrap;gap:10px;}
     .town-pill{border:2px solid var(--black);color:var(--black);font-weight:700;font-size:0.95rem;padding:8px 18px;border-radius:3px;}
+    .sector-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--black);border:2px solid var(--black);}
+    .sector-tile{background:var(--white);padding:36px 32px;transition:background 0.2s;}
+    .sector-tile:hover{background:var(--off-white);}
+    .sector-tile .sector-icon{font-size:2rem;margin-bottom:14px;line-height:1;}
+    .sector-tile h3{font-size:1.15rem;font-weight:700;margin-bottom:8px;letter-spacing:-0.01em;}
+    .sector-tile p{color:var(--mid);font-size:0.95rem;line-height:1.6;}
     .why-section{background:var(--black);color:white;padding:80px 24px;}
     .why-inner{max-width:1100px;margin:0 auto;}
     .why-section .eyebrow{color:var(--green);}
@@ -102,6 +108,7 @@
       .footer-inner{flex-direction:column;align-items:flex-start;}
       .stat{border-right:none;padding-right:0;margin-right:0;}
       .form-grid{grid-template-columns:1fr;}
+      .sector-grid{grid-template-columns:1fr 1fr;}
     }
     @media(max-width:500px){
       .steps{grid-template-columns:1fr;}
@@ -243,6 +250,46 @@
   </div>
 </div>
 
+<div class="section-wrap">
+  <div class="section-inner">
+    <div class="eyebrow">Who we work with</div>
+    <h2 class="section-h2">Leaflet distribution for every trade</h2>
+    <p class="section-intro">We deliver for all kinds of local businesses across Oxfordshire. Here are some of the sectors we regularly work with.</p>
+    <div class="sector-grid">
+      <div class="sector-tile">
+        <div class="sector-icon">🏠</div>
+        <h3>Roofing</h3>
+        <p>Get your roofing business in front of homeowners in your target area. A well-timed leaflet drop can generate a steady stream of enquiries.</p>
+      </div>
+      <div class="sector-tile">
+        <div class="sector-icon">🏡</div>
+        <h3>Estate Agents</h3>
+        <p>Target specific streets and postcodes to build brand awareness and generate vendor leads in the areas you want to win business.</p>
+      </div>
+      <div class="sector-tile">
+        <div class="sector-icon">💪</div>
+        <h3>Gyms</h3>
+        <p>Promote memberships, new class timetables, or seasonal offers directly to households near your gym.</p>
+      </div>
+      <div class="sector-tile">
+        <div class="sector-icon">🐕</div>
+        <h3>Dog Walking</h3>
+        <p>Reach dog owners in your local area. Leaflet distribution is one of the most cost-effective ways to grow a dog walking round.</p>
+      </div>
+      <div class="sector-tile">
+        <div class="sector-icon">🌿</div>
+        <h3>Gardening</h3>
+        <p>Target the right neighbourhoods for your gardening or landscaping business and keep your diary full all season long.</p>
+      </div>
+      <div class="sector-tile">
+        <div class="sector-icon">🍕</div>
+        <h3>Takeaways</h3>
+        <p>Put your menu through the doors of thousands of local homes. Leaflets remain one of the most effective tools for takeaway marketing.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="why-section">
   <div class="why-inner">
     <div class="eyebrow">Why us</div>
@@ -303,7 +350,7 @@
         </select>
       </div>
       <button type="submit" class="submit-btn">Send enquiry</button>
-      <p style="margin-top:14px;font-size:0.88rem;color:var(--mid);">Or email us at <a href="mailto:hello@letterboxdrops.uk" style="color:var(--black);font-weight:700;">hello@letterboxdrops.uk</a></p>
+      <p style="margin-top:14px;font-size:0.88rem;color:var(--mid);">Or email us at <a href="/cdn-cgi/l/email-protection#2f474a4343406f434a5b5b4a5d4d40574b5d405f5c015a44" style="color:var(--black);font-weight:700;"><span class="__cf_email__" data-cfemail="137b767f7f7c537f7667677661717c6b77617c63603d6678">[email&#160;protected]</span></a></p>
     </form>
   </div>
 </div>
@@ -311,11 +358,4 @@
 <footer>
   <div class="footer-inner">
     <span><strong style="color:var(--black);">Letterbox Drops</strong> &middot; Oxford, Oxfordshire</span>
-    <span><a href="mailto:hello@letterboxdrops.uk">hello@letterboxdrops.uk</a> &middot; Mon&ndash;Fri, 9am&ndash;5pm</span>
-    <span>&copy; <span id="year"></span> Letterbox Drops</span>
-  </div>
-</footer>
-
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body>
-</html>
+    <span><a href="/cdn-cgi/l/email-protection#08606d64646748646d7c7c6d7a6a67706c7a67787b267d63"><span class="__cf_email__" data-cfemail="4028252c2c2f002c2534342532222f
