@@ -73,7 +73,7 @@
     .step p{color:var(--mid);font-size:0.97rem;line-height:1.65;}
     .towns{display:flex;flex-wrap:wrap;gap:10px;}
     .town-pill{border:2px solid var(--black);color:var(--black);font-weight:700;font-size:0.95rem;padding:8px 18px;border-radius:3px;}
-    .sector-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--black);border:2px solid var(--black);}
+    .sector-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--black);border:2px solid var(--black);}.worth-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--black);border:2px solid var(--black);margin-bottom:40px;}.worth-cell{background:var(--white);padding:36px 32px;}.worth-cell h3{font-size:1.1rem;font-weight:700;margin-bottom:10px;}.worth-cell p{color:var(--mid);font-size:1rem;line-height:1.65;}.worth-cta{background:var(--black);color:white;padding:36px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;}.worth-cta p{font-size:1.1rem;font-weight:700;max-width:580px;line-height:1.55;}.worth-cta a{background:var(--green);color:white;text-decoration:none;font-weight:700;font-size:1rem;padding:14px 28px;border-radius:4px;white-space:nowrap;}
     .sector-tile{background:var(--white);padding:36px 32px;transition:background 0.2s;}
     .sector-tile:hover{background:var(--off-white);}
     .sector-tile .sector-icon{font-size:2rem;margin-bottom:14px;line-height:1;}
@@ -108,7 +108,7 @@
       .footer-inner{flex-direction:column;align-items:flex-start;}
       .stat{border-right:none;padding-right:0;margin-right:0;}
       .form-grid{grid-template-columns:1fr;}
-      .sector-grid{grid-template-columns:1fr 1fr;}
+      .sector-grid{grid-template-columns:1fr 1fr;}.worth-grid{grid-template-columns:1fr;}.worth-cta{flex-direction:column;align-items:flex-start;}.worth-cta a{width:100%;text-align:center;}
     }
     @media(max-width:500px){
       .steps{grid-template-columns:1fr;}
@@ -119,12 +119,15 @@
 </head>
 <body>
 
+<div style="background:var(--black);color:white;text-align:center;padding:10px 24px;font-size:0.9rem;font-weight:700;">
+  <a href="tel:01865965193" style="color:white;text-decoration:none;letter-spacing:0.02em;">📞 01865 965193</a>
+</div>
 <nav>
   <div class="nav-inner">
     <a href="#" class="nav-logo">
       <img src="logo.png" alt="Letterbox Drops" style="height:40px;width:auto;display:block;">
     </a>
-    <a href="tel:01865965193" style="color:var(--black);text-decoration:none;font-weight:700;font-size:0.95rem;margin-right:16px;">01865 965193</a><a href="#contact" class="nav-cta">Get a quote</a>
+    <a href="#contact" class="nav-cta">Get a quote</a>
   </div>
 </nav>
 
@@ -296,27 +299,27 @@
     <div class="eyebrow">Good question</div>
     <h2 class="section-h2">Is leafleting still worth it?</h2>
     <p class="section-intro">Short answer: yes. Here's why.</p>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--black);border:2px solid var(--black);margin-bottom:40px;">
-      <div style="background:var(--white);padding:36px 32px;">
-        <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:10px;">Your customers' letterboxes aren't crowded</h3>
-        <p style="color:var(--mid);font-size:1rem;line-height:1.65;">Everyone's fighting for attention online. Inboxes are full, social feeds are noisy, and digital ads get scrolled past in a second. But the letterbox? That's quiet. A physical leaflet lands in a space where there's almost no competition — and it can't be ignored with a swipe.</p>
+    <div class="worth-grid">
+      <div class="worth-cell">
+        <h3>Your customers' letterboxes aren't crowded</h3>
+        <p>Everyone's fighting for attention online. Inboxes are full, social feeds are noisy, and digital ads get scrolled past in a second. But the letterbox? That's quiet. A physical leaflet lands in a space where there's almost no competition — and it can't be ignored with a swipe.</p>
       </div>
-      <div style="background:var(--white);padding:36px 32px;">
-        <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:10px;">People trust something they can hold</h3>
-        <p style="color:var(--mid);font-size:1rem;line-height:1.65;">A leaflet feels real. It shows you're an actual business, invested in your local area. In a world of faceless online ads and AI-generated content, something physical on the kitchen counter builds credibility in a way a Facebook ad simply can't.</p>
+      <div class="worth-cell">
+        <h3>People trust something they can hold</h3>
+        <p>A leaflet feels real. It shows you're an actual business, invested in your local area. In a world of faceless online ads and AI-generated content, something physical on the kitchen counter builds credibility in a way a Facebook ad simply can't.</p>
       </div>
-      <div style="background:var(--white);padding:36px 32px;">
-        <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:10px;">It works alongside your other marketing</h3>
-        <p style="color:var(--mid);font-size:1rem;line-height:1.65;">Leaflets don't replace digital — they strengthen it. A homeowner sees your leaflet on Monday, spots your Facebook page on Thursday, and calls you on Friday. The leaflet started the conversation. That's how local businesses win.</p>
+      <div class="worth-cell">
+        <h3>It works alongside your other marketing</h3>
+        <p>Leaflets don't replace digital — they strengthen it. A homeowner sees your leaflet on Monday, spots your Facebook page on Thursday, and calls you on Friday. The leaflet started the conversation. That's how local businesses win.</p>
       </div>
-      <div style="background:var(--white);padding:36px 32px;">
-        <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:10px;">Your competitors probably aren't doing it</h3>
-        <p style="color:var(--mid);font-size:1rem;line-height:1.65;">Most small businesses have moved entirely online, which means leaflet distribution is a quieter, less competitive space than it's been in years. If your competitors aren't in the letterbox, you could be the only one there.</p>
+      <div class="worth-cell">
+        <h3>Your competitors probably aren't doing it</h3>
+        <p>Most small businesses have moved entirely online, which means leaflet distribution is a quieter, less competitive space than it's been in years. If your competitors aren't in the letterbox, you could be the only one there.</p>
       </div>
     </div>
-    <div style="background:var(--black);color:white;padding:36px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;">
-      <p style="font-size:1.15rem;font-weight:700;max-width:580px;line-height:1.55;">The businesses winning locally in 2026 are the ones combining digital with physical. A well-targeted leaflet drop is one of the most cost-effective tools a small business has.</p>
-      <a href="#contact" style="background:var(--green);color:white;text-decoration:none;font-weight:700;font-size:1rem;padding:14px 28px;border-radius:4px;white-space:nowrap;transition:background 0.2s;" onmouseover="this.style.background='#008f5f'" onmouseout="this.style.background='var(--green)'">Get a quote</a>
+    <div class="worth-cta">
+      <p>The businesses winning locally in 2026 are the ones combining digital with physical. A well-targeted leaflet drop is one of the most cost-effective tools a small business has.</p>
+      <a href="#contact">Get a quote</a>
     </div>
   </div>
 </div>
