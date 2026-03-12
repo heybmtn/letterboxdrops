@@ -207,10 +207,11 @@
       .footer-bottom { flex-direction: column; align-items: flex-start; }
     }
     @media(max-width: 480px) {
-      .top-bar { font-size: 0.82rem; padding: 8px 16px; }
       .nav-inner { height: 62px; padding: 0 14px; }
       .nav-logo img { height: 42px; }
       .nav-cta { font-size: 0.82rem; padding: 8px 13px; }
+      [style*="grid-template-columns:1fr 3fr"] { grid-template-columns: 1fr !important; }
+      [style*="grid-template-columns:1fr 3fr"] > div:first-child { padding: 16px 20px !important; justify-content: flex-start !important; }
       .hero h1 { font-size: 2.1rem; }
       .hero-actions { flex-direction: column; }
       .btn-primary, .btn-ghost { width: 100%; text-align: center; }
@@ -246,7 +247,7 @@
   <div class="hero">
     <div class="hero-location">Based in Oxford &middot; Serving Oxfordshire</div>
     <h1>Get your business <span>in front of local customers.</span></h1>
-    <p class="hero-sub">Thousands of local homes. Your leaflet. Their doormat. From just &pound;62 per thousand, we put your business in front of the people most likely to buy from you &mdash; GPS tracked, every single time.</p>
+    <p class="hero-sub">Thousands of local homes. Your leaflet. Their doormat. Shared distribution just &pound;62 per thousand, we put your business in front of the people most likely to buy from you &mdash; GPS tracked, every single time.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn-primary">Get a quote</a>
       <a href="#how" class="btn-ghost">How it works</a>
@@ -307,13 +308,11 @@
         <div class="addon-tag">Add-on</div>
         <h3>Print</h3>
         <p>We print your leaflets and hand them straight to the delivery team. No chasing suppliers. No logistics headaches. It just gets done.</p>
-        <div class="addon-detail">A5 / A4 / DL &middot; Gloss or silk &middot; Single or double-sided</div>
       </div>
       <div class="addon-card">
         <div class="addon-tag">Add-on</div>
         <h3>Design</h3>
         <p>No artwork? We'll create a leaflet that looks the part and makes people pick up the phone. Professional. On-brand. Print-ready.</p>
-        <div class="addon-detail">Professional artwork &rarr; print-ready files</div>
       </div>
     </div>
   </div>
@@ -344,7 +343,7 @@
       <div class="step">
         <div class="step-num">04</div>
         <h4>You get proof</h4>
-        <p>Once we're done, you get a GPS report showing exactly where every leaflet went. Most marketing channels can't give you that. We can.</p>
+        <p>Once we're done, you get a GPS report showing exactly where every leaflet went.</p>
       </div>
     </div>
   </div>
@@ -397,27 +396,27 @@
     <div class="eyebrow">Good question</div>
     <h2 class="section-h2">Is leafleting still worth it?</h2>
     <p class="section-intro">Yes. And here's the bit most people miss.</p>
-    <div class="worth-grid">
-      <div class="worth-cell">
-        <h3>The letterbox is the least crowded place in marketing</h3>
-        <p>Everybody's fighting online. Inboxes are rammed. Social feeds are exhausting. Digital ads get scrolled past before they've even registered. But the letterbox? Quiet. Calm. Barely any competition. Your leaflet lands there and it can't be swiped away.</p>
+    <div style="display:flex;flex-direction:column;gap:0;border:2px solid var(--navy);border-radius:8px;overflow:hidden;max-width:860px;">
+      <div style="display:grid;grid-template-columns:1fr 3fr;border-bottom:2px solid var(--navy);">
+        <div style="background:var(--navy);padding:28px 24px;display:flex;align-items:center;justify-content:center;"><span style="color:var(--orange);font-size:1.6rem;font-weight:700;line-height:1;">01</span></div>
+        <div style="padding:28px 28px;"><h3 style="font-size:1.05rem;font-weight:700;margin-bottom:8px;">The letterbox is the least crowded place in marketing</h3><p style="color:var(--mid);font-size:0.97rem;line-height:1.65;">Everybody's fighting online. Inboxes are rammed. Social feeds are exhausting. Digital ads get scrolled past before they've even registered. But the letterbox? Quiet. Calm. Barely any competition. Your leaflet lands there and it can't be swiped away.</p></div>
       </div>
-      <div class="worth-cell">
-        <h3>Physical beats digital for trust. Every time.</h3>
-        <p>A leaflet on the kitchen counter says: we're a real business. We invest in this area. We're not some faceless ad that disappeared the moment you scrolled past. In a world drowning in AI-generated content, something physical builds trust fast.</p>
+      <div style="display:grid;grid-template-columns:1fr 3fr;border-bottom:2px solid var(--navy);">
+        <div style="background:var(--navy);padding:28px 24px;display:flex;align-items:center;justify-content:center;"><span style="color:var(--orange);font-size:1.6rem;font-weight:700;line-height:1;">02</span></div>
+        <div style="padding:28px 28px;"><h3 style="font-size:1.05rem;font-weight:700;margin-bottom:8px;">Physical beats digital for trust. Every time.</h3><p style="color:var(--mid);font-size:0.97rem;line-height:1.65;">A leaflet on the kitchen counter says: we're a real business. We invest in this area. We're not some faceless ad that disappeared the moment you scrolled past. In a world drowning in AI-generated content, something physical builds trust fast.</p></div>
       </div>
-      <div class="worth-cell">
-        <h3>It makes everything else work harder</h3>
-        <p>Leaflets don't replace digital. They supercharge it. Someone sees your leaflet Monday, finds your Facebook page Thursday, calls you Friday. The leaflet started that journey. That's not a coincidence. That's how local businesses win.</p>
+      <div style="display:grid;grid-template-columns:1fr 3fr;border-bottom:2px solid var(--navy);">
+        <div style="background:var(--navy);padding:28px 24px;display:flex;align-items:center;justify-content:center;"><span style="color:var(--orange);font-size:1.6rem;font-weight:700;line-height:1;">03</span></div>
+        <div style="padding:28px 28px;"><h3 style="font-size:1.05rem;font-weight:700;margin-bottom:8px;">It makes everything else work harder</h3><p style="color:var(--mid);font-size:0.97rem;line-height:1.65;">Leaflets don't replace digital. They supercharge it. Someone sees your leaflet Monday, finds your Facebook page Thursday, calls you Friday. The leaflet started that journey. That's not a coincidence. That's how local businesses win.</p></div>
       </div>
-      <div class="worth-cell">
-        <h3>Your competitors have stopped. You shouldn't.</h3>
-        <p>Most local businesses abandoned leafleting for digital. That's left the letterbox wide open. Less competition. More attention. If your rivals aren't showing up there, you could have that space entirely to yourself.</p>
+      <div style="display:grid;grid-template-columns:1fr 3fr;border-bottom:2px solid var(--navy);">
+        <div style="background:var(--navy);padding:28px 24px;display:flex;align-items:center;justify-content:center;"><span style="color:var(--orange);font-size:1.6rem;font-weight:700;line-height:1;">04</span></div>
+        <div style="padding:28px 28px;"><h3 style="font-size:1.05rem;font-weight:700;margin-bottom:8px;">Your competitors have stopped. You shouldn't.</h3><p style="color:var(--mid);font-size:0.97rem;line-height:1.65;">Most local businesses abandoned leafleting for digital. That's left the letterbox wide open. Less competition. More attention. If your rivals aren't showing up there, you could have that space entirely to yourself.</p></div>
       </div>
-    </div>
-    <div class="worth-cta">
-      <p>The businesses winning locally in 2026 aren't choosing between digital and physical. They're doing both. A well-targeted leaflet drop is one of the highest-ROI moves a local business can make right now.</p>
-      <a href="#contact">Get a quote</a>
+      <div style="background:var(--navy);padding:28px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;">
+        <p style="color:white;font-size:1.05rem;font-weight:700;max-width:540px;line-height:1.55;">The businesses winning locally in 2026 aren't choosing between digital and physical. They're doing both. A well-targeted leaflet drop is one of the highest-ROI moves a local business can make right now.</p>
+        <a href="#contact" style="background:var(--orange);color:white;text-decoration:none;font-weight:700;font-size:0.97rem;padding:13px 26px;border-radius:6px;white-space:nowrap;transition:background 0.2s;">Get a quote</a>
+      </div>
     </div>
   </div>
 </div>
@@ -434,7 +433,7 @@
       </div>
       <div class="why-item">
         <h4>You can see exactly what happened</h4>
-        <p>Every delivery comes with a GPS report. Routes. Areas. Times. Your entire budget accounted for. Most marketing channels can't give you that. We can, every time.</p>
+        <p>Every delivery comes with a GPS report. Routes. Areas. Times. Your entire budget accounted for.</p>
       </div>
       <div class="why-item">
         <h4>We're local. Just like you.</h4>
@@ -454,7 +453,7 @@
     <div class="form-lhs">
       <div class="eyebrow">Get in touch</div>
       <h2 class="section-h2">Ready to get your name through more doors?</h2>
-      <p class="section-intro">Fill in the form below. Tell us where you want to target and how many homes you're thinking. We'll come back to you quickly with a straight-talking quote.</p>
+      <p class="section-intro">Fill in the form below. Tell us where you want to target and how many homes you're thinking.</p>
       <div class="form-trust">
         <div class="form-trust-item">
           <div class="form-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
@@ -569,7 +568,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>&copy; <span id="year"></span> Letterbox Drops. All rights reserved.</span>
+    <span>&copy; <span id="year"></span Letterbox Drops. All rights reserved.</span>
     <span>Designed and developed with <span style="color:var(--orange);">&#9829;</span> by Letterbox Drops</span>
   </div>
 </footer>
