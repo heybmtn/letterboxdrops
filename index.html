@@ -1050,16 +1050,12 @@
       setTimeout(function() { popup.style.display = 'none'; }, 300);
     }
 
-    // Exit intent — mouse leaves viewport upward
-    document.addEventListener('mouseleave', function(e) {
-      if (!pageReady) return;
-      if (e.clientY <= 5) showPopup();
-    });
-
-    // Mobile fallback — show after 30s
+    // Show after 30 seconds on all devices
     setTimeout(function() {
-      if (window.innerWidth < 768) showPopup();
+      showPopup();
     }, 30000);
+
+    // Remove mobile-only fallback — now handled above
 
     // Close on overlay click
     popup.addEventListener('click', function(e) {
