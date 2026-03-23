@@ -1,1108 +1,897 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#384b70">
-  <title>Leaflet Distribution Oxfordshire | From £60/thousand | Letterbox Drops</title>
-  <meta name="description" content="GPS-tracked leaflet distribution across Oxfordshire. Covering Oxford, Witney, Abingdon, Bicester, Banbury, Didcot and beyond. Based in Oxford. Just £60 per thousand." />
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Leaflet Distribution Oxfordshire | Letterbox Drops">
-  <meta property="og:description" content="GPS-tracked leaflet distribution across Oxfordshire. Reach thousands of local homes. Just £60 per thousand.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://letterboxdrops.uk">
-  <meta property="og:site_name" content="Letterbox Drops">
-  <meta property="og:image" content="https://letterboxdrops.uk/og-image.png">
-  <meta property="og:locale" content="en_GB">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Leaflet Distribution Oxfordshire | Letterbox Drops">
-  <meta name="twitter:description" content="GPS-tracked leaflet distribution across Oxfordshire. Reach thousands of local homes. Just £60 per thousand.">
-  <meta name="twitter:image" content="https://letterboxdrops.uk/og-image.png">
-  <link rel="canonical" href="https://letterboxdrops.uk">
-  <!-- Preload logo as LCP candidate -->
-  <link rel="preload" as="image" href="logo.png">
-  <!-- Non-render-blocking font load -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"></noscript>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Oxford Leaflet Delivery | Door Drop Distribution Oxford | £60 per 1,000</title>
+  <meta name="description" content="Oxford's trusted leaflet delivery service. We print and distribute your flyers to every door in Oxford and surrounding areas. From just £60 per 1,000 — complete start-to-finish service." />
+  <meta name="keywords" content="leaflet delivery Oxford, door drop Oxford, flyer distribution Oxford, leaflet distribution Oxfordshire, door to door marketing Oxford" />
+  <link rel="canonical" href="https://oxfordleafletdelivery.co.uk/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Oxford Leaflet Delivery — Door Drop Marketing That Works" />
+  <meta property="og:description" content="Print & deliver your leaflets across Oxford from just £60 per 1,000. Local experts, complete service, real results." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://oxfordleafletdelivery.co.uk/" />
+
+  <!-- Schema.org LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://letterboxdrops.uk/#business",
-        "name": "Letterbox Drops",
-        "description": "GPS-tracked leaflet distribution across Oxfordshire. Covering Oxford, Witney, Abingdon, Bicester, Banbury, Didcot and surrounding villages. Just £60 per thousand.",
-        "url": "https://letterboxdrops.uk",
-        "telephone": "+441865965193",
-        "email": "hello@letterboxdrops.uk",
-        "image": "https://letterboxdrops.uk/logo.png",
-        "logo": "https://letterboxdrops.uk/logo.png",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Oxford",
-          "addressLocality": "Oxford",
-          "addressRegion": "Oxfordshire",
-          "postalCode": "OX1",
-          "addressCountry": "GB"
-        },
-        "geo": { "@type": "GeoCoordinates", "latitude": 51.752, "longitude": -1.2577 },
-        "hasMap": "https://maps.google.com/?q=Oxford,Oxfordshire",
-        "areaServed": [
-          { "@type": "City", "name": "Oxford" },
-          { "@type": "City", "name": "Witney" },
-          { "@type": "City", "name": "Abingdon" },
-          { "@type": "City", "name": "Bicester" },
-          { "@type": "City", "name": "Banbury" },
-          { "@type": "City", "name": "Didcot" },
-          { "@type": "City", "name": "Carterton" },
-          { "@type": "City", "name": "Chipping Norton" }
-        ],
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-          "opens": "09:00",
-          "closes": "17:00"
-        },
-        "sameAs": ["https://www.facebook.com/letterboxdropsuk/"],
-        "priceRange": "££",
-        "currenciesAccepted": "GBP",
-        "paymentAccepted": "Cash, Credit Card, Bank Transfer",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Leaflet Distribution Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Shared Leaflet Distribution",
-                "description": "Shared door-to-door leaflet distribution across Oxfordshire. GPS tracked. Just £60 per thousand."
-              },
-              "price": "60",
-              "priceCurrency": "GBP",
-              "priceSpecification": {
-                "@type": "UnitPriceSpecification",
-                "price": "60",
-                "priceCurrency": "GBP",
-                "referenceQuantity": {
-                  "@type": "QuantitativeValue",
-                  "value": "1000",
-                  "unitText": "leaflets"
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://letterboxdrops.uk/#website",
-        "url": "https://letterboxdrops.uk",
-        "name": "Letterbox Drops",
-        "publisher": { "@id": "https://letterboxdrops.uk/#business" }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://letterboxdrops.uk/",
-        "url": "https://letterboxdrops.uk",
-        "name": "Leaflet Distribution Oxfordshire | From £60/thousand | Letterbox Drops",
-        "description": "GPS-tracked leaflet distribution across Oxfordshire. Covering Oxford, Witney, Abingdon, Bicester, Banbury, Didcot and beyond. Based in Oxford. Just £60 per thousand.",
-        "isPartOf": { "@id": "https://letterboxdrops.uk/#website" },
-        "about": { "@id": "https://letterboxdrops.uk/#business" }
-      }
-    ]
+    "@type": "LocalBusiness",
+    "name": "Oxford Leaflet Delivery",
+    "description": "Professional leaflet printing and door drop distribution service in Oxford and Oxfordshire.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Oxford"
+    },
+    "priceRange": "££",
+    "url": "https://oxfordleafletdelivery.co.uk"
   }
   </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
   <style>
     :root {
-      --orange: #f99229;
-      --orange-dark: #d97d1a;
+      --ink: #1e2a3e;
+      --cream: #f9fafc;
+      --warm: #f0f3f8;
+      --accent: #f99229;
+      --accent-dark: #e07d15;
       --navy: #384b70;
-      --navy-dark: #2c3a56;
-      --off-white: #f7f7f5;
-      --mid: #666;
-      --border: #e2e2e0;
-      --white: #ffffff;
+      --navy-dark: #293859;
+      --mid: #6b7a94;
+      --border: #dde3ef;
+      --max: 1160px;
     }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
-    body { font-family: 'Ubuntu', sans-serif; font-size: 18px; line-height: 1.7; background: var(--white); color: var(--navy); -webkit-font-smoothing: antialiased; }
-    /* Improve tap targets on mobile */
-    a, button { min-height: 44px; display: inline-flex; align-items: center; }
-    nav a, nav button { min-height: unset; display: inline-flex; align-items: center; }
-    .btn-primary, .btn-ghost, .nav-cta, .submit-btn, .work-apply-btn { min-height: 44px; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      font-size: 18px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
 
     /* ── NAV ── */
-    nav { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid var(--border); box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
-    .nav-inner { max-width: 1140px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
-    .nav-logo img { height: 56px; width: auto; display: block; }
-    .nav-cta { background: var(--orange); color: white; text-decoration: none; font-weight: 700; font-size: 1rem; padding: 11px 24px; border-radius: 6px; transition: background 0.2s; white-space: nowrap; }
-    .nav-cta:hover { background: var(--orange-dark); }
-    .nav-link { color: var(--navy); font-weight: 700; font-size: 1rem; text-decoration: none; padding: 8px 4px; }
-    .nav-right { display: flex; align-items: center; gap: 20px; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+    .footer-logo-img {
+      height: 36px;
+      width: auto;
+      display: block;
+      opacity: 0.85;
+    }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--mid);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-cta {
+      background: var(--navy);
+      color: #fff !important;
+      padding: 8px 20px;
+      border-radius: 3px;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--navy-dark) !important; color: #fff !important; }
 
     /* ── HERO ── */
-    .hero-wrap { background: var(--off-white); border-bottom: 1px solid var(--border); }
-    .hero { max-width: 1140px; margin: 0 auto; padding: 72px 24px 64px; }
-    .hero-location { font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.13em; color: var(--orange); margin-bottom: 16px; }
-    .hero h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.025em; max-width: 740px; margin-bottom: 20px; color: var(--navy); }
-    .hero h1 span { color: var(--orange); }
-    .hero-sub { font-size: 1.2rem; color: var(--mid); max-width: 540px; margin-bottom: 36px; line-height: 1.7; }
-    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
-    .btn-primary { background: var(--navy); color: white; text-decoration: none; font-weight: 700; font-size: 1rem; padding: 14px 30px; border-radius: 6px; transition: background 0.2s; display: inline-block; }
-    .btn-primary:hover { background: var(--navy-dark); }
-    .btn-ghost { color: var(--navy); text-decoration: none; font-weight: 700; font-size: 1rem; padding: 13px 30px; border-radius: 6px; border: 2px solid var(--navy); transition: all 0.2s; display: inline-block; }
-    .btn-ghost:hover { background: var(--navy); color: white; }
-    .hero-trust { margin-top: 32px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-    .hero-trust-item { display: flex; align-items: center; gap: 7px; font-size: 0.95rem; font-weight: 700; color: var(--mid); }
-    .hero-trust-item svg { flex-shrink: 0; }
+    .hero {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 80px 24px 72px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 4px 12px;
+      border-radius: 2px;
+      margin-bottom: 24px;
+      opacity: 0;
+      animation: fadeUp 0.6s 0.1s ease forwards;
+    }
+    .hero h1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+      opacity: 0;
+      animation: fadeUp 0.6s 0.2s ease forwards;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--accent);
+      position: relative;
+    }
+    .hero-sub {
+      font-size: 1.2rem;
+      color: var(--mid);
+      max-width: 480px;
+      margin-bottom: 36px;
+      opacity: 0;
+      animation: fadeUp 0.6s 0.3s ease forwards;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.6s 0.4s ease forwards;
+    }
+    .btn-primary {
+      background: var(--navy);
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 3px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+      transition: background 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--navy-dark); transform: translateY(-1px); }
+    .btn-ghost {
+      color: var(--ink);
+      padding: 14px 32px;
+      border: 1.5px solid var(--border);
+      border-radius: 3px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+      transition: border-color 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+    .btn-ghost:hover { border-color: var(--ink); transform: translateY(-1px); }
 
-    /* ── STAT BAR ── */
-    .stat-bar { background: var(--navy); color: white; padding: 0 24px; }
-    .stat-bar-inner { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); }
-    .stat { padding: 24px; border-right: 1px solid rgba(255,255,255,0.1); }
-    .stat:last-child { border-right: none; }
-    .stat-num { font-size: 2rem; font-weight: 700; color: var(--orange); line-height: 1; margin-bottom: 4px; }
-    .stat-label { font-size: 0.95rem; color: rgba(255,255,255,0.6); line-height: 1.4; }
+    /* hero visual */
+    .hero-visual {
+      opacity: 0;
+      animation: fadeIn 0.8s 0.5s ease forwards;
+    }
+    .hero-card {
+      background: var(--navy);
+      color: var(--cream);
+      border-radius: 6px;
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.25;
+    }
+    .hero-card-label {
+      font-size: 0.8rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 8px;
+    }
+    .hero-price {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 900;
+      line-height: 1;
+      color: #fff;
+    }
+    .hero-price sup { font-size: 1.8rem; vertical-align: top; margin-top: 8px; }
+    .hero-price-note { font-size: 1rem; color: rgba(255,255,255,0.6); margin-top: 6px; }
+    .hero-divider { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 28px 0; }
+    .hero-features { display: flex; flex-direction: column; gap: 12px; }
+    .hero-feature {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.85);
+    }
+    .hero-feature-icon {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.12);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.8rem;
+    }
 
-    /* ── SECTIONS ── */
-    .section-wrap { border-bottom: 1px solid var(--border); }
-    .section-inner { max-width: 1140px; margin: 0 auto; padding: 64px 24px; }
-    .eyebrow { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.13em; color: var(--orange); margin-bottom: 10px; }
-    .section-h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 12px; }
-    .section-intro { font-size: 1.1rem; color: var(--mid); max-width: 580px; margin-bottom: 40px; line-height: 1.75; }
+    /* ── TRUST BAR ── */
+    .trust-bar {
+      background: var(--warm);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+    }
+    .trust-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--mid);
+      white-space: nowrap;
+    }
+    .trust-item svg { color: var(--accent); flex-shrink: 0; }
 
-    /* ── DISTRO GRID ── */
-    .distro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-    .distro-cell { background: var(--white); padding: 28px 26px; }
-    .distro-cell h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--navy); }
-    .distro-cell p { color: var(--mid); font-size: 1rem; line-height: 1.7; }
-    .distro-price { background: var(--orange); color: white; padding: 28px 26px; grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
-    .distro-price-num { font-size: 2.8rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1; }
-    .distro-price-num span { font-size: 1rem; font-weight: 400; opacity: 0.85; }
-    .distro-price p { font-size: 1rem; font-weight: 700; max-width: 460px; line-height: 1.65; opacity: 0.92; }
-
-    /* ── ADD-ONS ── */
-    .addons-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .addon-card { border: 1px solid var(--border); border-radius: 10px; padding: 26px 24px; transition: border-color 0.2s, box-shadow 0.2s; }
-    .addon-card:hover { border-color: var(--navy); box-shadow: 0 2px 12px rgba(56,75,112,0.08); }
-    .addon-tag { display: inline-block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--orange); border: 1.5px solid var(--orange); padding: 3px 9px; border-radius: 4px; margin-bottom: 12px; }
-    .addon-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; }
-    .addon-card p { color: var(--mid); font-size: 1rem; line-height: 1.7; }
-    .addon-detail { margin-top: 14px; font-size: 0.88rem; font-weight: 700; color: var(--navy); }
+    /* ── SECTION WRAPPER ── */
+    .section {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 96px 24px;
+    }
+    .section-label {
+      font-size: 0.82rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .section-heading {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: clamp(2rem, 3vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+    .section-sub {
+      font-size: 1.15rem;
+      color: var(--mid);
+      max-width: 560px;
+      line-height: 1.75;
+    }
 
     /* ── HOW IT WORKS ── */
-    .how-section { background: var(--off-white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 64px 24px; }
-    .how-inner { max-width: 1140px; margin: 0 auto; }
-    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--border); }
-    .step { background: var(--white); padding: 28px 22px; position: relative; }
-    .step:not(:last-child)::after { content: ''; position: absolute; right: -1px; top: 20px; bottom: 20px; width: 1px; background: var(--border); }
-    .step-num { font-size: 2rem; font-weight: 700; color: var(--orange); line-height: 1; margin-bottom: 12px; opacity: 0.85; }
-    .step h4 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
-    .step p { color: var(--mid); font-size: 0.97rem; line-height: 1.7; }
+    .how-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      margin-top: 56px;
+      background: var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .how-step {
+      background: var(--cream);
+      padding: 40px 32px;
+      position: relative;
+    }
+    .step-num {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--border);
+      line-height: 1;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .step-title {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .step-body {
+      font-size: 1rem;
+      color: var(--mid);
+      line-height: 1.7;
+    }
 
-    /* ── LOCATION CARDS ── */
-    .loc-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
-    .loc-card { text-decoration:none; color:inherit; border:1px solid var(--border); border-radius:10px; transition:border-color 0.2s, box-shadow 0.2s; display:block; }
-    .loc-card:hover { border-color:var(--navy); box-shadow:0 2px 12px rgba(56,75,112,0.08); }
-    .loc-card-inner { padding:26px 24px; }
-    .loc-card h3 { font-size:1.15rem; font-weight:700; margin-bottom:8px; color:var(--navy); }
-    .loc-card p { color:var(--mid); font-size:0.95rem; line-height:1.65; margin-bottom:16px; }
-    .loc-link { font-size:0.9rem; font-weight:700; color:var(--orange); }
+    /* ── WHY ── */
+    .why-wrap {
+      background: var(--navy);
+      padding: 96px 24px;
+    }
+    .why-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .why-inner .section-label { color: rgba(255,255,255,0.5); }
+    .why-inner .section-heading { color: #fff; }
+    .why-inner .section-sub { color: rgba(255,255,255,0.7); font-size: 1.15rem; }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 56px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .why-card {
+      background: #2e3f5e;
+      padding: 44px 36px;
+    }
+    .why-icon {
+      width: 48px; height: 48px;
+      background: var(--accent);
+      border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 24px;
+      font-size: 1.4rem;
+    }
+    .why-title {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+    .why-body {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.75;
+    }
+    .why-stat {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: var(--accent);
+      margin-top: 20px;
+    }
+    .why-stat-label {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.03em;
+    }
 
-    /* ── TOWN PILL LINKS ── */
-    a.town-pill { text-decoration:none; }
-    a.town-pill:hover { background:var(--navy); color:white; }
-    .towns { display: flex; flex-wrap: wrap; gap: 8px; }
-    .town-pill { border: 1.5px solid var(--navy); color: var(--navy); font-weight: 700; font-size: 0.95rem; padding: 8px 16px; border-radius: 100px; transition: all 0.15s; }
-    .town-pill:hover { background: var(--navy); color: white; }
+    /* ── QUOTE FORM ── */
+    .form-wrap {
+      background: var(--warm);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 56px;
+      margin-top: 56px;
+    }
+    .form-heading {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .form-sub {
+      color: var(--mid);
+      font-size: 1rem;
+      margin-bottom: 36px;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group.full { grid-column: 1 / -1; }
+    label {
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+    input, select, textarea {
+      background: var(--cream);
+      border: 1.5px solid var(--border);
+      border-radius: 3px;
+      padding: 13px 16px;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1rem;
+      color: var(--ink);
+      transition: border-color 0.2s;
+      outline: none;
+      width: 100%;
+    }
+    input:focus, select:focus, textarea:focus { border-color: var(--accent); }
+    textarea { resize: vertical; min-height: 100px; }
+    .form-submit {
+      margin-top: 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .form-note {
+      font-size: 0.95rem;
+      color: var(--mid);
+    }
 
-    /* ── WHO WE WORK WITH ── */
-    .biz-list { list-style: none; padding: 0; margin: 0 0 28px; max-width: 560px; }
-    .biz-list li { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 1rem; display: flex; align-items: baseline; gap: 10px; }
-    .biz-list li:first-child { border-top: 1px solid var(--border); }
-    .biz-dash { color: var(--orange); font-weight: 700; flex-shrink: 0; }
-    .biz-note { color: var(--mid); font-size: 0.95rem; }
-    .biz-closing { font-size: 1.05rem; font-weight: 700; line-height: 1.65; max-width: 620px; padding: 22px 26px; background: var(--off-white); border-left: 4px solid var(--orange); border-radius: 0 6px 6px 0; }
+    /* ── FAQ ── */
+    .faq-list { margin-top: 48px; border-top: 1px solid var(--border); }
+    details {
+      border-bottom: 1px solid var(--border);
+      padding: 28px 0;
+    }
+    summary {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+';
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: var(--accent);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    details[open] summary::after { transform: rotate(45deg); }
+    details p {
+      margin-top: 16px;
+      color: var(--mid);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      max-width: 700px;
+    }
 
-    /* ── WORTH IT ── */
-    .worth-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 1px; }
-    .worth-cell { background: var(--white); padding: 28px 26px; }
-    .worth-cell h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--navy); }
-    .worth-cell p { color: var(--mid); font-size: 1rem; line-height: 1.7; }
-    .worth-cta { background: var(--navy); color: white; padding: 28px 26px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; border-radius: 0 0 10px 10px; border: 1px solid var(--navy); border-top: none; }
-    .worth-cta p { font-size: 1rem; font-weight: 700; max-width: 560px; line-height: 1.55; }
-    .worth-cta a { background: var(--orange); color: white; text-decoration: none; font-weight: 700; font-size: 0.95rem; padding: 12px 24px; border-radius: 6px; white-space: nowrap; transition: background 0.2s; }
-    .worth-cta a:hover { background: var(--orange-dark); }
-
-    /* ── WHY US ── */
-    .why-section { background: var(--navy); color: white; padding: 64px 24px; }
-    .why-inner { max-width: 1140px; margin: 0 auto; }
-    .why-section .eyebrow { color: var(--orange); }
-    .why-section .section-h2 { color: white; margin-bottom: 36px; }
-    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .why-item { padding: 26px 24px; background: rgba(255,255,255,0.06); border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); }
-    .why-item h4 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; color: white; display: flex; align-items: center; gap: 10px; }
-    .why-item h4::before { content: ''; display: inline-block; width: 7px; height: 7px; background: var(--orange); border-radius: 50%; flex-shrink: 0; }
-    .why-item p { color: rgba(255,255,255,0.65); font-size: 1rem; line-height: 1.75; padding-left: 17px; }
-
-    /* ── FORM ── */
-    .form-section { padding: 64px 24px; border-top: 1px solid var(--border); }
-    .form-inner { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-    .form-lhs .section-intro { margin-bottom: 28px; }
-    .form-trust { display: flex; flex-direction: column; gap: 12px; }
-    .form-trust-item { display: flex; align-items: flex-start; gap: 12px; font-size: 1rem; line-height: 1.55; }
-    .form-trust-icon { width: 20px; height: 20px; background: var(--orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
-    .form-trust-icon svg { width: 11px; height: 11px; }
-    .form-rhs form { width: 100%; }
-    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
-    .form-field label { display: block; font-weight: 700; font-size: 0.92rem; margin-bottom: 6px; color: var(--navy); }
-    .form-field input, .form-field select { width: 100%; padding: 11px 13px; border: 1.5px solid var(--border); border-radius: 6px; font-family: 'Ubuntu', sans-serif; font-size: 1rem; outline: none; background: white; color: var(--navy); transition: border-color 0.15s; }
-    .form-field input:focus, .form-field select:focus { border-color: var(--orange); box-shadow: 0 0 0 3px rgba(249,146,41,0.12); }
-    .form-section-label { font-weight: 700; font-size: 0.92rem; margin-bottom: 8px; display: block; color: var(--navy); }
-    .form-sub-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--mid); margin-bottom: 8px; display: block; }
-    .checkbox-group { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px; }
-    .checkbox-item { display: flex; align-items: center; gap: 9px; padding: 9px 12px; border: 1.5px solid var(--border); border-radius: 6px; cursor: pointer; transition: border-color 0.15s; }
-    .checkbox-item:hover { border-color: var(--navy); }
-    .checkbox-item input[type=checkbox] { width: 16px; height: 16px; accent-color: var(--orange); cursor: pointer; flex-shrink: 0; }
-    .checkbox-item label { font-size: 0.95rem; cursor: pointer; line-height: 1.3; }
-    .form-divider { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
-    .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
-    .submit-btn { background: var(--orange); color: white; border: none; font-family: 'Ubuntu', sans-serif; font-size: 1.05rem; font-weight: 700; padding: 15px 32px; border-radius: 6px; cursor: pointer; transition: background 0.2s; width: 100%; margin-top: 4px; }
-    .submit-btn:hover { background: var(--orange-dark); }
-    .form-footer-note { margin-top: 12px; font-size: 0.88rem; color: var(--mid); text-align: center; }
-    .form-footer-note a { color: var(--navy); font-weight: 700; text-decoration: none; }
-    .form-footer-note a:hover { color: var(--orange); }
-    .form-field-gap { margin-bottom: 14px; }
-    .form-optional { font-weight: 400; color: var(--mid); }
-    .form-tel-link { color: var(--navy); font-weight: 700; }
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      background: var(--navy);
+      padding: 80px 24px;
+      text-align: center;
+    }
+    .cta-banner h2 {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .cta-banner p {
+      color: rgba(255,255,255,0.7);
+      font-size: 1.2rem;
+      margin-bottom: 36px;
+    }
+    .btn-white {
+      background: #fff;
+      color: var(--navy);
+      padding: 16px 40px;
+      border-radius: 3px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      display: inline-block;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
 
     /* ── FOOTER ── */
-    footer { background: var(--navy); color: rgba(255,255,255,0.75); padding: 40px 24px 28px; content-visibility: auto; }
-    .footer-inner { max-width: 1140px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 18px; }
-    .footer-brand { font-size: 1rem; font-weight: 700; color: white; }
-    .footer-links { display: flex; gap: 20px; flex-wrap: wrap; align-items: center; }
-    .footer-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; transition: color 0.15s; min-height: 44px; display: inline-flex; align-items: center; }
-    .footer-links a:hover { color: var(--orange); }
-    .footer-bottom { max-width: 1140px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.85rem; color: rgba(255,255,255,0.75); }
-    .footer-bottom a { color: rgba(255,255,255,0.75); text-decoration: none; }
+    footer {
+      background: var(--navy-dark);
+      color: rgba(255,255,255,0.4);
+      padding: 48px 24px;
+    }
+    .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .footer-logo {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.7);
+    }
+    .footer-logo span { color: var(--accent); }
+    footer p { font-size: 0.82rem; }
+    .footer-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .footer-links a {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.35);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.7); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
 
     /* ── RESPONSIVE ── */
-    @media(max-width: 900px) {
-      .form-inner { grid-template-columns: 1fr; gap: 40px; }
-      .why-grid { grid-template-columns: 1fr; gap: 12px; }
-      .loc-grid { grid-template-columns: 1fr 1fr; }
-    }
-    @media(max-width: 768px) {
-      .stat-bar { display: none; }
-      .nav-inner { height: 62px; padding: 0 16px; }
-      .nav-logo img { height: 44px; }
-      .nav-cta { font-size: 0.85rem; padding: 9px 15px; }
-      .hero { padding: 44px 20px 40px; }
-      .section-inner { padding: 48px 20px; }
-      .how-section, .why-section, .form-section { padding: 48px 20px; }
-      .stat-bar-inner { grid-template-columns: 1fr 1fr; }
-      .stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
-      .stat:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.1); }
-      .stat:nth-last-child(-n+2) { border-bottom: none; }
-      .distro-grid { grid-template-columns: 1fr; }
-      .distro-price { flex-direction: column; align-items: flex-start; }
-      .addons-row { grid-template-columns: 1fr; }
-      .steps { grid-template-columns: 1fr 1fr; }
-      .step::after { display: none; }
-      .worth-grid { grid-template-columns: 1fr; }
-      .worth-cta { flex-direction: column; }
-      .worth-cta a { width: 100%; text-align: center; }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; gap: 40px; }
+      .how-grid { grid-template-columns: 1fr 1fr; }
+      .why-grid { grid-template-columns: 1fr 1fr; }
       .form-grid { grid-template-columns: 1fr; }
-      .form-row-2 { grid-template-columns: 1fr; }
-      .checkbox-group { grid-template-columns: 1fr; }
-      .footer-inner { flex-direction: column; align-items: flex-start; }
-      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .form-wrap { padding: 32px 24px; }
+      .nav-links { display: none; }
     }
-    /* ── WORK FOR US ── */
-    .work-hero { background: var(--navy); color: white; padding: 64px 24px; border-bottom: 1px solid rgba(255,255,255,0.1); }
-    .work-hero-inner { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-    .work-hero .eyebrow { color: var(--orange); }
-    .work-hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 700; letter-spacing: -0.025em; line-height: 1.1; margin-bottom: 20px; color: white; }
-    .work-hero h1 span { color: var(--orange); }
-    .work-hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 32px; }
-    .work-hero-highlights { display: flex; flex-direction: column; gap: 12px; }
-    .work-highlight { display: flex; align-items: center; gap: 12px; font-size: 1rem; font-weight: 700; color: white; }
-    .work-highlight-dot { width: 8px; height: 8px; background: var(--orange); border-radius: 50%; flex-shrink: 0; }
-    .work-pay-card { background: white; border-radius: 10px; padding: 36px 32px; color: var(--navy); }
-    .work-pay-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.13em; color: var(--orange); margin-bottom: 10px; }
-    .work-pay-num { font-size: 3.4rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1; margin-bottom: 6px; color: var(--navy); }
-    .work-pay-num span { font-size: 1rem; font-weight: 400; color: var(--mid); }
-    .work-pay-note { font-size: 0.97rem; color: var(--mid); margin-bottom: 24px; line-height: 1.5; }
-    .work-pay-details { list-style: none; padding: 0; margin: 0 0 24px; border-top: 1px solid var(--border); }
-    .work-pay-details li { padding: 11px 0; border-bottom: 1px solid var(--border); font-size: 1rem; display: flex; align-items: center; gap: 10px; }
-    .work-pay-details li::before { content: ''; width: 6px; height: 6px; background: var(--orange); border-radius: 50%; flex-shrink: 0; }
-    .work-apply-btn { display: block; text-align: center; background: var(--orange); color: white; text-decoration: none; font-weight: 700; font-size: 1.05rem; padding: 15px 28px; border-radius: 6px; transition: background 0.2s; }
-    .work-apply-btn:hover { background: var(--orange-dark); }
-
-    .work-req-section { background: var(--off-white); border-bottom: 1px solid var(--border); padding: 64px 24px; }
-    .work-req-inner { max-width: 1140px; margin: 0 auto; }
-    .work-req-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 36px; }
-    .work-req-cell { background: var(--white); padding: 28px 24px; }
-    .work-req-cell h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--navy); }
-    .work-req-cell p { color: var(--mid); font-size: 0.97rem; line-height: 1.7; }
-    .work-req-icon { width: 34px; height: 34px; background: var(--orange); border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
-    .work-req-icon svg { width: 17px; height: 17px; }
-    .work-perfect-for { background: var(--navy); color: white; padding: 26px 30px; border-radius: 10px; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
-    .work-perfect-for strong { color: var(--orange); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 5px; }
-    .work-perfect-for p { font-size: 1rem; font-weight: 700; line-height: 1.5; color: white; }
-
-    /* ── WORTH IT ── */
-    .wit-wrap { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; max-width: 860px; }
-    .wit-row { display: grid; grid-template-columns: 1fr 3fr; border-bottom: 1px solid var(--border); }
-    .wit-num { background: var(--navy); padding: 28px 24px; display: flex; align-items: center; justify-content: center; }
-    .wit-num span { color: var(--orange); font-size: 1.6rem; font-weight: 700; line-height: 1; }
-    .wit-body { padding: 28px; }
-    .wit-body h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
-    .wit-body p { color: var(--mid); font-size: 1rem; line-height: 1.7; }
-    .wit-cta { background: var(--navy); padding: 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
-    .wit-cta p { color: white; font-size: 1rem; font-weight: 700; max-width: 540px; line-height: 1.6; }
-    .wit-cta a { background: var(--orange); color: white; text-decoration: none; font-weight: 700; font-size: 0.95rem; padding: 13px 26px; border-radius: 6px; white-space: nowrap; transition: background 0.2s; }
-    .wit-cta a:hover { background: var(--orange-dark); }
-
-    /* ── WEBSITES SECTION ── */
-    .web-section { border-top: 1px solid var(--border); padding: 56px 24px; }
-    .web-inner { max-width: 1140px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 32px; }
-    .web-inner h2 { font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 10px; max-width: 580px; }
-    .web-inner p { font-size: 0.97rem; color: var(--mid); max-width: 500px; line-height: 1.7; }
-
-    /* ── TEXTAREA ── */
-    .form-textarea { width: 100%; padding: 11px 13px; border: 1.5px solid var(--border); border-radius: 6px; font-family: 'Ubuntu', sans-serif; font-size: 1rem; outline: none; color: var(--navy); resize: vertical; transition: border-color 0.15s; }
-    .form-textarea:focus { border-color: var(--orange); box-shadow: 0 0 0 3px rgba(249,146,41,0.12); }
-
-    @media(max-width: 900px) {
-      .work-hero-inner { grid-template-columns: 1fr; gap: 40px; }
-      .work-req-grid { grid-template-columns: 1fr 1fr; }
-    }
-    @media(max-width: 768px) {
-      .wit-row { grid-template-columns: 80px 1fr; }
-    }
-    @media(max-width: 600px) {
-      .work-req-grid { grid-template-columns: 1fr; }
-      .work-hero, .work-req-section { padding: 48px 20px; }
-      .web-section { padding: 48px 20px; }
-      .wit-cta { flex-direction: column; }
-      .wit-cta a { width: 100%; text-align: center; }
-    }
-
-    @media(max-width: 480px) {
-      .nav-inner { height: 56px; padding: 0 14px; }
-      .nav-logo img { height: 38px; }
-      .nav-cta { font-size: 0.8rem; padding: 8px 12px; }
-      .hero h1 { font-size: 2rem; }
-      .hero-actions { flex-direction: column; }
-      .btn-primary, .btn-ghost { width: 100%; text-align: center; }
-      .steps { grid-template-columns: 1fr; }
-      .stat-bar-inner { grid-template-columns: 1fr 1fr; }
-      .hero-trust { gap: 10px; }
-      .distro-price-num { font-size: 2rem; }
-      .wit-row { grid-template-columns: 1fr; }
-      .wit-num { padding: 16px 20px; justify-content: flex-start; }
+    @media (max-width: 580px) {
+      .how-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .trust-inner { gap: 20px; justify-content: flex-start; }
     }
   </style>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNEEML2NBJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-FNEEML2NBJ');
-  </script>
 </head>
 <body>
 
-<!-- Top bar -->
-<!-- Nav -->
+<!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="#" class="nav-logo">
-      <img src="logo.png" alt="Letterbox Drops" width="160" height="56" fetchpriority="high">
-    </a>
-    <div class="nav-right">
-      <a href="#work-for-us" class="nav-link">Work for us</a>
-      <a href="#contact" class="nav-cta">Get in touch</a>
-    </div>
+    <a class="logo" href="#"><img src="logo.png" alt="Oxford Leaflet Delivery" /></a>
+    <ul class="nav-links">
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#why-door-drops">Why Door Drops?</a></li>
+      <li><a href="#faq">FAQs</a></li>
+      <li><a href="#quote" class="nav-cta">Get a Quote</a></li>
+    </ul>
   </div>
 </nav>
 
-<!-- Hero -->
-<div class="hero-wrap">
+<!-- HERO -->
+<header>
   <div class="hero">
-    <div class="hero-location">Based in Oxford &middot; Serving Oxfordshire</div>
-    <h1>More local customers.<br><span>Starting with their doormat.</span></h1>
-    <p class="hero-sub">While your competitors fight over the same Google clicks, your leaflet lands in thousands of local homes — in the hands of people who live near you. Just &pound;60 per thousand.</p>
-    <div class="hero-actions">
-      <a href="#contact" class="btn-primary">Get in touch</a>
-      <a href="#how" class="btn-ghost">How it works</a>
-    </div>
-
-  </div>
-</div>
-
-<!-- Stat bar -->
-<div class="stat-bar">
-  <div class="stat-bar-inner">
-    <div class="stat"><div class="stat-num">&pound;60</div><div class="stat-label">per thousand, shared distribution</div></div>
-    <div class="stat"><div class="stat-num">5,000</div><div class="stat-label">minimum order</div></div>
-    <div class="stat"><div class="stat-num">4 wks</div><div class="stat-label">turnaround time</div></div>
-    <div class="stat"><div class="stat-num">GPS</div><div class="stat-label">tracked every distribution</div></div>
-  </div>
-</div>
-
-<!-- Distribution -->
-<div class="section-wrap" id="services">
-  <div class="section-inner">
-    <div class="eyebrow">Leaflet distribution</div>
-    <h2 class="section-h2">Your leaflet. Their kitchen counter.</h2>
-    <p class="section-intro">Digital ads disappear the second someone scrolls. A leaflet stays. It sits on the side, gets passed to a partner, gets picked up three days later. That's the kind of attention money can't buy online.</p>
-    <div class="distro-grid">
-      <div class="distro-cell">
-        <h3>Land in the right homes</h3>
-        <p>We target by postcode, radius, or specific streets. Add Experian demographic data — age, household size, income — and your leaflets only reach the people most likely to become your customers.</p>
-      </div>
-      <div class="distro-cell">
-        <h3>See exactly where every leaflet went</h3>
-        <p>Every distribution is GPS tracked. You get a full report when it's done — routes, areas, times. No wondering if it happened. No taking our word for it.</p>
-      </div>
-      <div class="distro-cell">
-        <h3>Shared Campaign — the smart way to start</h3>
-        <p>Your leaflet goes out alongside three non-competing businesses, splitting the cost between you. Same homes. Same impact. Lower price. Just &pound;60 per thousand.</p>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Oxford &amp; Oxfordshire</span>
+      <h1>Leaflet delivery that <em>actually</em> lands.</h1>
+      <p class="hero-sub">Put your message directly into the hands of Oxford households. From print to doorstep — we handle every step of the campaign so you don't have to.</p>
+      <div class="hero-actions">
+        <a href="#quote" class="btn-primary">Get Your Free Quote</a>
+        <a href="#how-it-works" class="btn-ghost">See How It Works</a>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- Add-ons -->
-<div class="section-wrap">
-  <div class="section-inner">
-    <div class="eyebrow">Optional extras</div>
-    <h2 class="section-h2">Don't have leaflets yet? We'll sort that too.</h2>
-    <p class="section-intro">Most customers come to us with leaflets ready. But if you're starting from scratch, we can take care of the whole thing — design, print, distribute — so you don't have to coordinate a thing.</p>
-    <div class="addons-row">
-      <div class="addon-card">
-        <div class="addon-tag">Add-on</div>
-        <h3>Print</h3>
-        <p>We print your leaflets and pass them straight to the distribution team. No chasing suppliers, no logistics headaches.</p>
-      </div>
-      <div class="addon-card">
-        <div class="addon-tag">Add-on</div>
-        <h3>Design</h3>
-        <p>No artwork? We'll design a leaflet that looks sharp, communicates clearly, and gives people a reason to call. Professional and on-brand.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- How it works -->
-<div class="how-section" id="how">
-  <div class="how-inner">
-    <div class="eyebrow">The process</div>
-    <h2 class="section-h2">Up and running in four steps.</h2>
-    <p class="section-intro">We keep it simple. You tell us what you need, we handle the rest.</p>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">01</div>
-        <h4>Get in touch</h4>
-        <p>Tell us where you want to target and roughly how many homes. We'll get back to you the same day to confirm the details and get things booked in.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">02</div>
-        <h4>Drop us your leaflets</h4>
-        <p>Bring your printed leaflets to us in Oxford and we'll take it from there. Need print or design? We can handle that too.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">03</div>
-        <h4>We distribute</h4>
-        <p>Our local team gets your leaflet through the right doors, on time and on target.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">04</div>
-        <h4>You get proof</h4>
-        <p>A GPS report lands in your inbox when it's done — routes, areas, times. Full visibility, every time.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Coverage -->
-<div class="section-wrap" id="coverage">
-  <div class="section-inner">
-    <div class="eyebrow">Where we distribute</div>
-    <h2 class="section-h2">Right across Oxfordshire.</h2>
-    <p class="section-intro">We cover the whole county — towns, villages, and everywhere in between. Not sure if we reach your area? Just ask.</p>
-    <div class="towns">
-      <a href="/oxford" class="town-pill">Oxford</a>
-      <a href="/witney" class="town-pill">Witney</a>
-      <a href="/abingdon" class="town-pill">Abingdon</a>
-      <a href="/bicester" class="town-pill">Bicester</a>
-      <span class="town-pill">Banbury</span>
-      <span class="town-pill">Didcot</span>
-      <span class="town-pill">Carterton</span>
-      <span class="town-pill">Chipping Norton</span>
-      <span class="town-pill">+ surrounding villages</span>
-    </div>
-  </div>
-</div>
-
-<!-- Location pages -->
-<div class="section-wrap">
-  <div class="section-inner">
-    <div class="eyebrow">Serving Oxfordshire</div>
-    <h2 class="section-h2">Find your local distribution area.</h2>
-    <p class="section-intro">We've put together detailed information on leaflet distribution for each of our main towns — including local pricing, coverage maps, and area-specific advice.</p>
-    <div class="loc-grid">
-      <a href="/oxford" class="loc-card">
-        <div class="loc-card-inner">
-          <h3>Oxford</h3>
-          <p>Target specific neighbourhoods across the city — from Cowley and Headington to Jericho and Summertown.</p>
-          <span class="loc-link">View Oxford coverage &rarr;</span>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <p class="hero-card-label">Starting from</p>
+        <p class="hero-price"><sup>£</sup>60</p>
+        <p class="hero-price-note">per 1,000 leaflets — 5,000 minimum</p>
+        <hr class="hero-divider" />
+        <div class="hero-features">
+          <div class="hero-feature">
+            <div class="hero-feature-icon">✓</div>
+            Full print &amp; distribution included
+          </div>
+          <div class="hero-feature">
+            <div class="hero-feature-icon">✓</div>
+            GPS-tracked delivery routes
+          </div>
+          <div class="hero-feature">
+            <div class="hero-feature-icon">✓</div>
+            Targeted by postcode or demographic
+          </div>
+          <div class="hero-feature">
+            <div class="hero-feature-icon">✓</div>
+            Completion report sent to your inbox
+          </div>
         </div>
-      </a>
-      <a href="/witney" class="loc-card">
-        <div class="loc-card-inner">
-          <h3>Witney</h3>
-          <p>One of Oxfordshire's fastest-growing towns — full of new residents who haven't found their local businesses yet.</p>
-          <span class="loc-link">View Witney coverage &rarr;</span>
-        </div>
-      </a>
-      <a href="/abingdon" class="loc-card">
-        <div class="loc-card-inner">
-          <h3>Abingdon</h3>
-          <p>A tight-knit market town with strong community loyalty and a culture of supporting local businesses.</p>
-          <span class="loc-link">View Abingdon coverage &rarr;</span>
-        </div>
-      </a>
-      <a href="/bicester" class="loc-card">
-        <div class="loc-card-inner">
-          <h3>Bicester</h3>
-          <p>One of the country's fastest-growing towns. Thousands of new homes, new families, and new customers.</p>
-          <span class="loc-link">View Bicester coverage &rarr;</span>
-        </div>
-      </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      Oxford-based team
+    </div>
+    <div class="trust-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      Sustainably printed leaflets
+    </div>
+    <div class="trust-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      No hidden fees
+    </div>
+    <div class="trust-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      Response within 1 business day
     </div>
   </div>
 </div>
 
-<!-- Who we work with -->
-<div class="section-wrap">
-  <div class="section-inner">
-    <div class="eyebrow">Who we work with</div>
-    <h2 class="section-h2">If your customers live nearby, this works for you.</h2>
-    <p class="section-intro">Leaflets work for any business that relies on local trade. Here's who we work with most:</p>
-    <ul class="biz-list">
-      <li><span class="biz-dash">—</span><span>Trades <span class="biz-note">(plumbers, electricians, landscapers)</span></span></li>
-      <li><span class="biz-dash">—</span><span>Takeaways and restaurants</span></li>
-      <li><span class="biz-dash">—</span><span>Estate agents</span></li>
-      <li><span class="biz-dash">—</span><span>Gyms and fitness classes</span></li>
-      <li><span class="biz-dash">—</span><span>Beauty salons</span></li>
-      <li><span class="biz-dash">—</span><span>Local events and festivals</span></li>
-      <li><span class="biz-dash">—</span><span>Home improvement services</span></li>
-      <li><span class="biz-dash">—</span><span>Garden centres</span></li>
-      <li><span class="biz-dash">—</span><span>Charities and local campaigns</span></li>
-    </ul>
-    <p class="biz-closing">If you're not on this list, don't worry — if you need local customers, get in touch. Chances are we can help.</p>
-  </div>
-</div>
-
-<!-- Is it worth it -->
-<div class="section-wrap">
-  <div class="section-inner">
-    <div class="eyebrow">Good question</div>
-    <h2 class="section-h2">Does leafleting actually work?</h2>
-    <p class="section-intro">Yes. And the reason why might surprise you.</p>
-    <div class="wit-wrap">
-      <div class="wit-row">
-        <div class="wit-num"><span>01</span></div>
-        <div class="wit-body"><h3>The letterbox is the least competitive place in marketing</h3><p>Everyone else is fighting over the same Facebook audiences and Google clicks. The letterbox? Barely any competition. Your leaflet doesn't compete with ten other ads — it arrives on its own.</p></div>
+<!-- HOW IT WORKS -->
+<section id="how-it-works">
+  <div class="section">
+    <span class="section-label">The process</span>
+    <h2 class="section-heading">Four steps from brief to doorstep.</h2>
+    <p class="section-sub">We've made door drop marketing as simple as possible — no jargon, no faff. Just a clear process with one friendly team behind it.</p>
+    <div class="how-grid">
+      <div class="how-step">
+        <span class="step-num">01</span>
+        <p class="step-title">Tell Us About Your Campaign</p>
+        <p class="step-body">Fill in our quick quote form with a few details about your campaign goals, target area, and print requirements. We'll take it from there.</p>
       </div>
-      <div class="wit-row">
-        <div class="wit-num"><span>02</span></div>
-        <div class="wit-body"><h3>People trust something they can hold</h3><p>A leaflet on the kitchen counter says: this is a real local business. It builds credibility in a way a banner ad never could. In a world full of faceless digital noise, physical stands out.</p></div>
+      <div class="how-step">
+        <span class="step-num">02</span>
+        <p class="step-title">We'll Confirm the Details</p>
+        <p class="step-body">A member of our Oxford team will be in touch within one business day to run through your spec, answer any questions, and offer tailored recommendations to maximise your ROI.</p>
       </div>
-      <div class="wit-row">
-        <div class="wit-num"><span>03</span></div>
-        <div class="wit-body"><h3>It makes your other marketing work harder</h3><p>Someone sees your leaflet on Monday, searches your name on Thursday, calls on Friday. The leaflet started that chain. It's not luck — it's how local businesses consistently win new customers.</p></div>
+      <div class="how-step">
+        <span class="step-num">03</span>
+        <p class="step-title">Print &amp; Preparation</p>
+        <p class="step-body">Once you're happy with the plan and quote, we print your leaflets using quality-checked, sustainably sourced materials. Your campaign is packed and ready to go.</p>
       </div>
-      <div class="wit-row">
-        <div class="wit-num"><span>04</span></div>
-        <div class="wit-body"><h3>Your competitors have already given up on it</h3><p>Most local businesses abandoned leafleting years ago. That's left the letterbox wide open. If your rivals aren't showing up in people's homes, you can own that space entirely.</p></div>
-      </div>
-      <div class="wit-cta">
-        <p>The businesses winning locally right now aren't choosing between digital and physical. They're doing both. A well-targeted leaflet drop is one of the most cost-effective things a local business can do.</p>
-        <a href="#contact">Get in touch</a>
+      <div class="how-step">
+        <span class="step-num">04</span>
+        <p class="step-title">Delivery &amp; Report</p>
+        <p class="step-body">Sit back while we distribute your leaflets to every target door. When the campaign is complete, you'll receive a full delivery report straight to your inbox.</p>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- Why us -->
-<div class="why-section">
+<!-- WHY DOOR DROPS -->
+<div class="why-wrap" id="why-door-drops">
   <div class="why-inner">
-    <div class="eyebrow">Why us</div>
-    <h2 class="section-h2">Why local businesses keep coming back.</h2>
+    <span class="section-label">Why it works</span>
+    <h2 class="section-heading">Door drops reach people other channels can't.</h2>
+    <p class="section-sub">In a world of scroll fatigue and ad blockers, a physical leaflet is a breath of fresh air — and the numbers prove it.</p>
     <div class="why-grid">
-      <div class="why-item">
-        <h4>Your leaflets actually get delivered</h4>
-        <p>We pay above the national living wage — because well-paid staff do the job properly. No rushing, no skipping streets, no dumping leaflets in a bin.</p>
+      <div class="why-card">
+        <div class="why-icon">📬</div>
+        <p class="why-title">High Engagement</p>
+        <p class="why-body">A leaflet landing on the doormat demands attention in a way a digital ad simply can't. Each household interacts with a leaflet an average of 2.8 times, and 73% keep it for future reference.</p>
+        <p class="why-stat">73%</p>
+        <p class="why-stat-label">of recipients keep the leaflet</p>
       </div>
-      <div class="why-item">
-        <h4>Full accountability, every time</h4>
-        <p>Every distribution comes with a GPS report. You'll see exactly where your leaflets went. No guessing, no chasing us for updates.</p>
+      <div class="why-card">
+        <div class="why-icon">📅</div>
+        <p class="why-title">Lasting Impact</p>
+        <p class="why-body">Unlike a digital ad that disappears in a scroll, leaflets stick around the home for an average of 5.4 days — with 14% kept for over four weeks. That's repeated, free exposure for your brand.</p>
+        <p class="why-stat">5.4</p>
+        <p class="why-stat-label">average days in the household</p>
       </div>
-      <div class="why-item">
-        <h4>We're local. Just like you.</h4>
-        <p>Based in Oxford, with a team who live and work in the area. You're talking to the people who actually do the distribution — not a call centre.</p>
+      <div class="why-card">
+        <div class="why-icon">🎯</div>
+        <p class="why-title">Pinpoint Targeting</p>
+        <p class="why-body">Choose your audience by postcode, neighbourhood, or demographic profile across Oxford and Oxfordshire. Your leaflets go to exactly the households most likely to respond.</p>
+        <p class="why-stat">100%</p>
+        <p class="why-stat-label">coverage of your chosen area</p>
       </div>
-      <div class="why-item">
-        <h4>Low minimum order — test before you commit</h4>
-        <p>Start from just 5,000 leaflets. Run a small campaign, see what comes back, then decide whether to scale. No big upfront commitment needed.</p>
+      <div class="why-card">
+        <div class="why-icon">💷</div>
+        <p class="why-title">Cost Efficiency</p>
+        <p class="why-body">At £60 per 1,000 deliveries, door drop marketing offers an exceptional cost-per-impression compared to digital, print, or outdoor alternatives — with a measurably strong return on investment.</p>
+        <p class="why-stat">£60</p>
+        <p class="why-stat-label">per 1,000 households reached</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📲</div>
+        <p class="why-title">Drives Real Action</p>
+        <p class="why-body">A well-designed leaflet with a clear call-to-action — a QR code, phone number, or offer — prompts people to visit your website, call your business, or walk through your door.</p>
+        <p class="why-stat">↑</p>
+        <p class="why-stat-label">direct response rates vs digital</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🌱</div>
+        <p class="why-title">Sustainably Printed</p>
+        <p class="why-body">Every leaflet we produce is printed sustainably, using responsibly sourced paper stocks. You can grow your business and feel good about how you're doing it.</p>
+        <p class="why-stat">✓</p>
+        <p class="why-stat-label">eco-conscious print production</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Contact form -->
-<div class="form-section" id="contact">
-  <div class="form-inner">
-    <div class="form-lhs">
-      <div class="eyebrow">Get in touch</div>
-      <h2 class="section-h2">It's &pound;60 per thousand. Ready to get started?</h2>
-      <p class="section-intro">Pricing is simple — &pound;60 per thousand, minimum 5,000 leaflets. Drop us your details and we'll get back to you to confirm your area and get things moving.</p>
-      <div class="form-trust">
-        <div class="form-trust-item">
-          <div class="form-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <span>We'll get back to you within one business day</span>
-        </div>
-        <div class="form-trust-item">
-          <div class="form-trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <span>Prefer to talk? Call us on <a href="tel:01865965193" class="form-tel-link">01865 965193</a></span>
-        </div>
-      </div>
-    </div>
-    <div class="form-rhs">
-      <form action="https://formspree.io/f/xreybgja" method="POST">
+<!-- QUOTE FORM -->
+<section id="quote">
+  <div class="section">
+    <span class="section-label">Get started</span>
+    <h2 class="section-heading">Get your free campaign quote.</h2>
+    <p class="section-sub">Tell us a bit about what you need and we'll come back to you within one business day with a personalised quote and any recommendations to help your campaign perform.</p>
+    <div class="form-wrap">
+      <p class="form-heading">Build Your Campaign</p>
+      <p class="form-sub">* Distribution from £60 per 1,000 with a minimum order of 5,000 leaflets. One of our team will confirm full pricing once we've reviewed your brief.</p>
+      <form name="quote" method="POST" data-netlify="true" action="/thanks">
         <div class="form-grid">
-          <div class="form-field">
-            <label>Your name</label>
-            <input type="text" name="name" required placeholder="Jane Smith">
+          <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
           </div>
-          <div class="form-field">
-            <label>Phone number</label>
-            <input type="tel" name="phone" required placeholder="07700 900000">
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="jane@yourbusiness.co.uk" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="01865 000000" />
+          </div>
+          <div class="form-group">
+            <label for="business">Business Name</label>
+            <input type="text" id="business" name="business" placeholder="Your Business Ltd" />
+          </div>
+          <div class="form-group">
+            <label for="quantity">Number of Leaflets *</label>
+            <select id="quantity" name="quantity" required>
+              <option value="">Select quantity</option>
+              <option>5,000 – 9,999</option>
+              <option>10,000 – 24,999</option>
+              <option>25,000 – 49,999</option>
+              <option>50,000+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="size">Leaflet Size *</label>
+            <select id="size" name="size" required>
+              <option value="">Select size</option>
+              <option>DL (99mm × 210mm)</option>
+              <option>A5 (148mm × 210mm)</option>
+              <option>A4 (210mm × 297mm)</option>
+              <option>Other – I'll specify in notes</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="print">Do You Need Print?</label>
+            <select id="print" name="print">
+              <option>Yes — print &amp; distribute</option>
+              <option>No — distribution only</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="area">Target Area in Oxford</label>
+            <input type="text" id="area" name="area" placeholder="e.g. Cowley, Headington, City Centre" />
+          </div>
+          <div class="form-group full">
+            <label for="notes">Campaign Objective / Additional Notes</label>
+            <textarea id="notes" name="notes" placeholder="Tell us what you're promoting and any other details that would help us plan your campaign…"></textarea>
           </div>
         </div>
-        <div class="form-field form-field-gap">
-          <label>Email address</label>
-          <input type="email" name="email" required placeholder="jane@example.com">
+        <div class="form-submit">
+          <button type="submit" class="btn-primary">Request My Free Quote →</button>
+          <p class="form-note">No obligation. We'll respond within one business day.</p>
         </div>
-        <div class="form-field form-field-gap">
-          <label>Anything else we should know? <span class="form-optional">(optional)</span></label>
-          <textarea name="message" rows="4" placeholder="e.g. area you want to cover, type of business, rough quantity — whatever's useful..." class="form-textarea"></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Get in touch &rarr;</button>
-        <p class="form-footer-note">Or email us at <a href="mailto:hello@letterboxdrops.uk">hello@letterboxdrops.uk</a></p>
       </form>
     </div>
   </div>
-</div>
+</section>
 
-<!-- Hidden email capture -->
-<div style="display:none;">
-  <form action="https://formspree.io/f/myknzyor" method="POST">
-    <input type="email" name="email">
-  </form>
-</div>
-
-<!-- Work for us -->
-<div id="work-for-us">
-
-  <!-- Hero -->
-  <div class="work-hero">
-    <div class="work-hero-inner">
-      <div>
-        <h1>Want to join <span>Letterbox Drops?</span></h1>
-        <div class="work-hero-highlights">
-          <div class="work-highlight"><span class="work-highlight-dot"></span> Flexible hours — work when it suits you</div>
-          <div class="work-highlight"><span class="work-highlight-dot"></span> Paid weekly, directly into your bank account</div>
-          <div class="work-highlight"><span class="work-highlight-dot"></span> Start immediately</div>
-        </div>
-      </div>
-      <div>
-        <div class="work-pay-card">
-          <div class="work-pay-label">Self-employed pay rate</div>
-          <div class="work-pay-num">£13–18 <span>per hour</span></div>
-          <ul class="work-pay-details">
-
-          </ul>
-          <a href="mailto:hello@letterboxdrops.uk" class="work-apply-btn">Apply now &rarr;</a>
-        </div>
-      </div>
+<!-- FAQ -->
+<section id="faq">
+  <div class="section" style="padding-top: 0;">
+    <span class="section-label">Common questions</span>
+    <h2 class="section-heading">Everything you need to know.</h2>
+    <div class="faq-list">
+      <details>
+        <summary>What areas in Oxford do you cover?</summary>
+        <p>We cover the whole of Oxford and the wider Oxfordshire area, including Cowley, Headington, Summertown, Jericho, Botley, Abingdon, Witney, Didcot, Banbury, and beyond. If you have a specific postcode or neighbourhood in mind, just let us know and we'll confirm coverage.</p>
+      </details>
+      <details>
+        <summary>How much does leaflet delivery in Oxford cost?</summary>
+        <p>Distribution starts from £60 per 1,000 leaflets, with a minimum order of 5,000. The total cost of your campaign will depend on the volume, area, and whether you need printing. We'll provide a clear, all-in quote with no hidden fees before any work begins.</p>
+      </details>
+      <details>
+        <summary>Do I need to supply my own leaflets?</summary>
+        <p>Not at all — we offer a complete print-and-distribute service. Simply supply your artwork (or tell us if you'd like help with design) and we'll handle everything. If you already have printed stock, we're happy to distribute your existing leaflets too.</p>
+      </details>
+      <details>
+        <summary>How will I know the leaflets have been delivered?</summary>
+        <p>We provide a delivery report on completion of every campaign. You'll receive this directly to your inbox so you have full peace of mind that your leaflets reached the right doors.</p>
+      </details>
+      <details>
+        <summary>How quickly can you turn around a campaign?</summary>
+        <p>Timescales depend on campaign size and print requirements. Once you submit your quote request, one of our team will get back to you within one business day with a full timeline. For urgent campaigns, just let us know and we'll do our best to accommodate you.</p>
+      </details>
+      <details>
+        <summary>Can I target specific streets or types of households?</summary>
+        <p>Yes. We can target by postcode sector, specific streets, or demographic profile — so your leaflets reach the households most likely to become your customers. Just mention your preferences when requesting a quote.</p>
+      </details>
     </div>
   </div>
+</section>
 
-  <!-- Requirements -->
-  <div class="work-req-section">
-    <div class="work-req-inner">
-      <div class="eyebrow">What we're looking for</div>
-      <h2 class="section-h2">Simple requirements. Flexible work.</h2>
-      <p class="section-intro">We don't ask for much. If you're reliable, reasonably fit, and can commit to a few hours a week, you're most of the way there.</p>
-      <div class="work-req-grid">
-        <div class="work-req-cell">
-          <div class="work-req-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-          </div>
-          <h3>20 years or older</h3>
-          <p>You must be at least 20 to work with us as a self-employed contractor.</p>
-        </div>
-        <div class="work-req-cell">
-          <div class="work-req-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="2"/><circle cx="16" cy="16" r="1"/></svg>
-          </div>
-          <h3>Driver preferred</h3>
-          <p>A car makes covering routes much easier, though it's not always essential depending on where you're based.</p>
-        </div>
-        <div class="work-req-cell">
-          <div class="work-req-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          </div>
-          <h3>Physically active</h3>
-          <p>You'll be on your feet walking routes with a bag of leaflets. Good fitness and a willingness to get some steps in is a must.</p>
-        </div>
-        <div class="work-req-cell">
-          <div class="work-req-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <h3>Available to start now</h3>
-          <p>We have rounds ready to go. Successful applicants can begin accepting jobs straight away, no long wait.</p>
-        </div>
-        <div class="work-req-cell">
-          <div class="work-req-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>Reliable &amp; self-motivated</h3>
-          <p>You'll work independently. The businesses we distribute for are counting on their leaflets arriving on time — so dependability matters.</p>
-        </div>
-      </div>
-      <div class="work-perfect-for">
-        <div>
-          <strong>Perfect for</strong>
-          <p>Students, parents with kids at school, and active retirees seeking flexible work arrangements.</p>
-        </div>
-        <a href="mailto:hello@letterboxdrops.uk" class="work-apply-btn">Apply now &rarr;</a>
-      </div>
-    </div>
-  </div>
-
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>Ready to grow your Oxford business?</h2>
+  <p>Get your free quote today — we'll have everything planned out within 24 hours.</p>
+  <a href="#quote" class="btn-white">Get My Free Quote</a>
 </div>
 
-<!-- Websites by Letterbox Drops -->
-<div class="web-section">
-  <div class="web-inner">
-    <div>
-      <div class="eyebrow">Websites by Letterbox Drops</div>
-      <h2>Most local businesses don't need a big website. They need one page that turns visitors into customers.</h2>
-      <p>No bloat. No ongoing fees. Just a fast, focused page built to get the phone ringing. That's what we build.</p>
-    </div>
-    <a href="mailto:hello@letterboxdrops.uk" class="btn-primary">Ask us about it &rarr;</a>
-  </div>
-</div>
-
+<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <span class="footer-brand">Letterbox Drops &middot; Oxford, Oxfordshire</span>
-    <div class="footer-links">
-      <a href="mailto:hello@letterboxdrops.uk">hello@letterboxdrops.uk</a>
-      <a href="tel:01865965193">01865 965193</a>
-      <a href="https://www.facebook.com/letterboxdropsuk/" target="_blank" rel="noopener noreferrer">Facebook</a>
-      <a href="#work-for-us">Work for us</a>
-      <a href="#services">Services</a>
-      <a href="#coverage">Coverage</a>
-      <a href="#contact">Get in touch</a>
+    <div>
+      <img src="logo.png" alt="Oxford Leaflet Delivery" class="footer-logo-img" />
+      <p style="margin-top:8px;">Oxford, Oxfordshire</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#why-door-drops">Why Door Drops</a></li>
+      <li><a href="#quote">Get a Quote</a></li>
+      <li><a href="#faq">FAQs</a></li>
+      <li><a href="https://www.facebook.com/letterboxdropsuk/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+    </ul>
+    <div style="text-align:right;">
+      <p>© 2026 Oxford Leaflet Delivery. All rights reserved.</p>
+      <p style="margin-top:6px;">Designed and developed with ♥ by <a href="https://www.facebook.com/letterboxdropsuk/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none;">Letterbox Drops</a></p>
     </div>
   </div>
-  <div class="footer-bottom">
-    <span>&copy; Letterbox Drops. All rights reserved.</span>
-    <span>Designed and developed with &hearts; by Letterbox Drops</span>
-  </div>
 </footer>
-
-<!-- Exit Intent Popup -->
-<div id="exit-popup" class="exit-popup-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="popup-heading">
-  <div class="exit-popup-box">
-    <button class="exit-popup-close" aria-label="Close">&times;</button>
-    <div class="exit-popup-eyebrow">Limited offer</div>
-    <h2 class="exit-popup-heading" id="popup-heading">Before you go — get <span>20% off</span> your first drop.</h2>
-    <p class="exit-popup-sub">Mention code <strong>FIRST20</strong> when you get in touch and we'll take 20% off your first distribution. That's leaflets reaching local homes for just &pound;48 per thousand.</p>
-    <form class="exit-popup-form" action="https://formspree.io/f/xreybgja" method="POST">
-      <input type="hidden" name="source" value="exit-intent-popup">
-      <input type="hidden" name="discount_code" value="FIRST20">
-      <div class="exit-popup-fields">
-        <input type="text" name="name" placeholder="Your name" required class="exit-popup-input">
-        <input type="tel" name="phone" placeholder="Phone number" required class="exit-popup-input">
-      </div>
-      <button type="submit" class="exit-popup-btn">Claim my 20% discount &rarr;</button>
-      <p class="exit-popup-note">Or just remember the code: <strong>FIRST20</strong></p>
-    </form>
-  </div>
-</div>
-
-<style>
-  .exit-popup-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(30, 40, 60, 0.72);
-    z-index: 9999;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
-  .exit-popup-overlay.active {
-    display: flex;
-    opacity: 1;
-    visibility: visible;
-  }
-  .exit-popup-code {
-    display: inline-block;
-    background: var(--off-white);
-    border: 2px dashed var(--orange);
-    color: var(--navy);
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    padding: 12px 28px;
-    border-radius: 6px;
-    margin: 20px 0 16px;
-  }
-  .exit-popup-box {
-    background: var(--white);
-    border-radius: 12px;
-    padding: 48px 44px;
-    max-width: 520px;
-    width: 100%;
-    position: relative;
-    box-shadow: 0 24px 64px rgba(0,0,0,0.22);
-    transform: translateY(16px);
-    transition: transform 0.3s ease;
-  }
-  .exit-popup-overlay.active .exit-popup-box {
-    transform: translateY(0);
-  }
-  .exit-popup-close {
-    position: absolute;
-    top: 16px;
-    right: 18px;
-    background: none;
-    border: none;
-    font-size: 1.6rem;
-    line-height: 1;
-    color: var(--mid);
-    cursor: pointer;
-    padding: 4px 8px;
-    min-height: unset;
-    transition: color 0.15s;
-  }
-  .exit-popup-close:hover { color: var(--navy); }
-  .exit-popup-eyebrow {
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.13em;
-    color: var(--orange);
-    margin-bottom: 10px;
-  }
-  .exit-popup-heading {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.15;
-    margin-bottom: 14px;
-    color: var(--navy);
-  }
-  .exit-popup-heading span { color: var(--orange); }
-  .exit-popup-sub {
-    font-size: 1rem;
-    color: var(--mid);
-    line-height: 1.7;
-    margin-bottom: 24px;
-  }
-  .exit-popup-fields {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-  .exit-popup-input {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1.5px solid var(--border);
-    border-radius: 6px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem;
-    outline: none;
-    color: var(--navy);
-    transition: border-color 0.15s;
-  }
-  .exit-popup-input:focus { border-color: var(--orange); box-shadow: 0 0 0 3px rgba(249,146,41,0.12); }
-  .exit-popup-btn {
-    width: 100%;
-    background: var(--orange);
-    color: white;
-    border: none;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-    padding: 15px 24px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.2s;
-    margin-top: 4px;
-    min-height: 44px;
-  }
-  .exit-popup-btn:hover { background: var(--orange-dark); }
-  .exit-popup-note {
-    margin-top: 12px;
-    font-size: 0.88rem;
-    color: var(--mid);
-    text-align: center;
-  }
-  .exit-popup-success {
-    text-align: center;
-    padding: 16px 0 8px;
-  }
-  .exit-popup-success h3 {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--navy);
-    margin-bottom: 10px;
-  }
-  .exit-popup-success p {
-    color: var(--mid);
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-  .exit-popup-success .code {
-    display: inline-block;
-    background: var(--off-white);
-    border: 2px dashed var(--orange);
-    color: var(--navy);
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    padding: 10px 24px;
-    border-radius: 6px;
-    margin: 16px 0;
-  }
-  @media(max-width: 480px) {
-    .exit-popup-box { padding: 36px 24px; }
-    .exit-popup-fields { grid-template-columns: 1fr; }
-  }
-</style>
-
-<script>
-  (function() {
-    var popup = document.getElementById('exit-popup');
-    if (!popup) return;
-
-    var shown = false;
-
-    // Clear any stale session flag for testing — remove this line in production
-    // sessionStorage.removeItem('exitPopupDismissed');
-
-    // Don't show if already dismissed this session
-    if (sessionStorage.getItem('exitPopupDismissed')) return;
-
-    // Must be on page for at least 5s before popup can fire
-    var pageReady = false;
-    setTimeout(function() { pageReady = true; }, 5000);
-
-    function showPopup() {
-      if (shown) return;
-      shown = true;
-      popup.style.display = 'flex';
-      // Force reflow then add active class for transition
-      requestAnimationFrame(function() {
-        requestAnimationFrame(function() {
-          popup.classList.add('active');
-          popup.setAttribute('aria-hidden', 'false');
-          document.body.style.overflow = 'hidden';
-        });
-      });
-    }
-
-    function hidePopup() {
-      popup.classList.remove('active');
-      popup.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-      sessionStorage.setItem('exitPopupDismissed', '1');
-      setTimeout(function() { popup.style.display = 'none'; }, 300);
-    }
-
-    // Show after 30 seconds on all devices
-    setTimeout(function() {
-      showPopup();
-    }, 30000);
-
-    // Remove mobile-only fallback — now handled above
-
-    // Close on overlay click
-    popup.addEventListener('click', function(e) {
-      if (e.target === popup) hidePopup();
-    });
-
-    // Close button
-    var closeBtn = popup.querySelector('.exit-popup-close');
-    if (closeBtn) closeBtn.addEventListener('click', hidePopup);
-
-    // Escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && shown) hidePopup();
-    });
-
-    // Form submit
-    var form = popup.querySelector('.exit-popup-form');
-    if (form) {
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        var data = new FormData(form);
-        fetch(form.action, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        }).then(function() {
-          showSuccess();
-        }).catch(function() {
-          showSuccess();
-        });
-      });
-    }
-
-    function showSuccess() {
-      var box = popup.querySelector('.exit-popup-box');
-      box.innerHTML =
-        '<div class="exit-popup-success">' +
-        '<div class="exit-popup-eyebrow">You\'re all set</div>' +
-        '<h2 class="exit-popup-heading">Your discount is saved. <span>Use code FIRST20.</span></h2>' +
-        '<p class="exit-popup-sub">Mention it when you get in touch and we\'ll take 20% off your first distribution — bringing it down to just &pound;48 per thousand.</p>' +
-        '<div class="exit-popup-code">FIRST20</div>' +
-        '<button class="exit-popup-btn" onclick="document.getElementById(\'exit-popup\').querySelector(\'.exit-popup-close\') && (function(){document.getElementById(\'exit-popup\').classList.remove(\'active\');document.body.style.overflow=\'\';setTimeout(function(){document.getElementById(\'exit-popup\').style.display=\'none\'},300)})()">Close &rarr;</button>' +
-        '</div>';
-      setTimeout(hidePopup, 8000);
-    }
-  })();
-</script>
 
 </body>
 </html>
