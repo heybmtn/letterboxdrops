@@ -237,7 +237,7 @@
       font-size: 0.8rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.45);
+      color: #a8bcd4;
       margin-bottom: 8px;
     }
     .hero-price {
@@ -248,20 +248,20 @@
       color: #fff;
     }
     .hero-price sup { font-size: 1.8rem; vertical-align: top; margin-top: 8px; }
-    .hero-price-note { font-size: 1rem; color: rgba(255,255,255,0.6); margin-top: 6px; }
-    .hero-divider { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 28px 0; }
+    .hero-price-note { font-size: 1rem; color: #b8ccdf; margin-top: 6px; }
+    .hero-divider { border: none; border-top: 1px solid rgba(255,255,255,0.12); margin: 28px 0; }
     .hero-features { display: flex; flex-direction: column; gap: 12px; }
     .hero-feature {
       display: flex;
       align-items: center;
       gap: 12px;
       font-size: 1rem;
-      color: rgba(255,255,255,0.85);
+      color: #dce8f2;
     }
     .hero-feature-icon {
       width: 28px; height: 28px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.15);
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0;
       font-size: 0.8rem;
@@ -369,9 +369,9 @@
       max-width: var(--max);
       margin: 0 auto;
     }
-    .why-inner .section-label { color: rgba(255,255,255,0.5); }
+    .why-inner .section-label { color: #a8bcd4; }
     .why-inner .section-heading { color: #fff; }
-    .why-inner .section-sub { color: rgba(255,255,255,0.7); font-size: 1.15rem; }
+    .why-inner .section-sub { color: #c2d4e5; font-size: 1.15rem; }
     .why-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -402,7 +402,7 @@
     }
     .why-body {
       font-size: 1rem;
-      color: rgba(255,255,255,0.75);
+      color: #c2d4e5;
       line-height: 1.75;
     }
     .why-stat {
@@ -414,7 +414,7 @@
     }
     .why-stat-label {
       font-size: 0.9rem;
-      color: rgba(255,255,255,0.7);
+      color: #c2d4e5;
       letter-spacing: 0.03em;
     }
 
@@ -528,7 +528,7 @@
       margin-bottom: 16px;
     }
     .cta-banner p {
-      color: rgba(255,255,255,0.7);
+      color: #c2d4e5;
       font-size: 1.2rem;
       margin-bottom: 36px;
     }
@@ -548,7 +548,7 @@
     /* ── FOOTER ── */
     footer {
       background: var(--navy-dark);
-      color: rgba(255,255,255,0.65);
+      color: #b8ccdf;
       padding: 48px 24px 36px;
     }
     .footer-inner {
@@ -578,7 +578,7 @@
     }
     .footer-links a {
       font-size: 0.9rem;
-      color: rgba(255,255,255,0.65);
+      color: #b8ccdf;
       text-decoration: none;
       transition: color 0.2s;
     }
@@ -599,7 +599,7 @@
     }
     .footer-review a:hover { opacity: 0.75; }
     .footer-credit a {
-      color: rgba(255,255,255,0.65);
+      color: #b8ccdf;
       text-decoration: underline;
       text-underline-offset: 3px;
       transition: color 0.2s;
@@ -931,13 +931,18 @@
   </div>
 </footer>
 
-  <!-- Google tag (gtag.js) — deferred to avoid render blocking -->
-  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-FNEEML2NBJ"></script>
+  <!-- Google Analytics — loaded after page is interactive to eliminate unused JS -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-FNEEML2NBJ');
+    window.addEventListener('load', function() {
+      var s = document.createElement('script');
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-FNEEML2NBJ';
+      s.async = true;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FNEEML2NBJ', { 'transport_type': 'beacon' });
+    });
   </script>
 </body>
 </html>
