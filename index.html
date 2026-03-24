@@ -32,19 +32,17 @@
   }
   </script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNEEML2NBJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-FNEEML2NBJ');
-  </script>
 
-  <!-- Fonts -->
+
+  <!-- Preload logo as LCP image -->
+  <link rel="preload" as="image" href="logo.png" fetchpriority="high" />
+
+  <!-- Fonts: preload key woff2, load stylesheet async to avoid render blocking -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" /></noscript>
 
   <style>
     :root {
@@ -55,7 +53,7 @@
       --accent-dark: #e07d15;
       --navy: #384b70;
       --navy-dark: #293859;
-      --mid: #6b7a94;
+      --mid: #4e5d75;       /* darkened from #6b7a94 for WCAG AA contrast */
       --border: #dde3ef;
       --max: 1160px;
     }
@@ -115,16 +113,19 @@
       font-size: 1rem;
       font-weight: 500;
       color: var(--mid);
-      text-decoration: none;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      text-underline-offset: 3px;
       letter-spacing: 0.02em;
-      transition: color 0.2s;
+      transition: color 0.2s, text-decoration-color 0.2s;
     }
-    .nav-links a:hover { color: var(--ink); }
+    .nav-links a:hover { color: var(--ink); text-decoration-color: var(--ink); }
     .nav-cta {
       background: var(--navy);
       color: #fff !important;
       padding: 8px 20px;
       border-radius: 3px;
+      text-decoration: none !important;
       transition: background 0.2s !important;
     }
     .nav-cta:hover { background: var(--navy-dark) !important; color: #fff !important; }
@@ -413,7 +414,7 @@
     }
     .why-stat-label {
       font-size: 0.9rem;
-      color: rgba(255,255,255,0.5);
+      color: rgba(255,255,255,0.7);
       letter-spacing: 0.03em;
     }
 
@@ -547,7 +548,7 @@
     /* ── FOOTER ── */
     footer {
       background: var(--navy-dark);
-      color: rgba(255,255,255,0.4);
+      color: rgba(255,255,255,0.65);
       padding: 48px 24px 36px;
     }
     .footer-inner {
@@ -577,11 +578,11 @@
     }
     .footer-links a {
       font-size: 0.9rem;
-      color: rgba(255,255,255,0.4);
+      color: rgba(255,255,255,0.65);
       text-decoration: none;
       transition: color 0.2s;
     }
-    .footer-links a:hover { color: rgba(255,255,255,0.8); }
+    .footer-links a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
     .footer-bottom {
       display: flex;
       justify-content: space-between;
@@ -598,11 +599,12 @@
     }
     .footer-review a:hover { opacity: 0.75; }
     .footer-credit a {
-      color: rgba(255,255,255,0.35);
-      text-decoration: none;
+      color: rgba(255,255,255,0.65);
+      text-decoration: underline;
+      text-underline-offset: 3px;
       transition: color 0.2s;
     }
-    .footer-credit a:hover { color: rgba(255,255,255,0.7); }
+    .footer-credit a:hover { color: #fff; }
 
     /* ── ANIMATIONS ── */
     @keyframes fadeUp {
@@ -633,9 +635,9 @@
 <body>
 
 <!-- NAV -->
-<nav>
+<nav aria-label="Main navigation">
   <div class="nav-inner">
-    <a class="logo" href="#"><img src="logo.png" alt="Oxford Leaflet Delivery" /></a>
+    <a class="logo" href="#"><img src="logo.png" alt="Oxford Leaflet Delivery" width="160" height="40" fetchpriority="high" /></a>
     <ul class="nav-links">
       <li><a href="#how-it-works">How It Works</a></li>
       <li><a href="#why-door-drops">Why Door Drops?</a></li>
@@ -644,6 +646,8 @@
     </ul>
   </div>
 </nav>
+
+<main>
 
 <!-- HERO -->
 <header>
@@ -906,10 +910,11 @@
 </div>
 
 <!-- FOOTER -->
+</main>
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
-      <img src="logo.png" alt="Oxford Leaflet Delivery" class="footer-logo-img" />
+      <img src="logo.png" alt="Oxford Leaflet Delivery" class="footer-logo-img" width="144" height="36" />
       <ul class="footer-links">
         <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#why-door-drops">Why Door Drops</a></li>
@@ -926,5 +931,13 @@
   </div>
 </footer>
 
+  <!-- Google tag (gtag.js) — deferred to avoid render blocking -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-FNEEML2NBJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FNEEML2NBJ');
+  </script>
 </body>
 </html>
